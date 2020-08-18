@@ -1,17 +1,19 @@
 
-import debug from 'debug';
-debug('Running index page');
+// import debug from 'debug';
+// debug('Running index page');
 
 // TODO Possible styles usage?
 // <div className={styles.container}>
 
-const Index = () => (
+export default function Navigation() {
+  return (
     // Navigation
     <nav className="navbar navbar-default navbar-fixed-top">
       <div className="container">
         {/* Brand and toggle get grouped for better mobile display */}
         <div className="navbar-header page-scroll">
-          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <button type="button" className="navbar-toggle" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1">
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
@@ -47,7 +49,5 @@ const Index = () => (
       </div>
       {/* /.container-fluid */}
     </nav>
-);
-
-export default Index;
-
+  )
+}
