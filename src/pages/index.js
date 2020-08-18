@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import constants from '../src/constants';
+import styles from './index.module.css';
+import constants from '../../src/constants';
+import navigation from '../../src/components/navigation';
 
 export default function Home() {
   return (
@@ -16,32 +17,35 @@ export default function Home() {
         <meta property="og:type" content={constants.OG_TYPE} />
         <meta property="og:url" content={constants.OG_URL} />
         <meta property="og:image" content={constants.OG_IMAGE} />
-        <!-- Optional open graph meta -->
         <meta property="og:description" content={constants.SITE_DESCRIPTION} />
 
         <title>{constants.SITE_TITLE}</title>
         <link rel="icon" href="/favicon.ico" />
 
-        <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        {/* Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ */}
+        <link href="../../styles/css/bootstrap.min.css" rel="stylesheet" />
 
-        <!-- Custom CSS -->
-        <link href="css/freelancer.min.css?cache=4" rel="stylesheet" />
+        {/* Custom CSS */}
+        <link href="../../styles/css/ch-style.min.css?cache=4" rel="stylesheet" />
 
-        <!-- Custom Fonts -->
-        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        {/* Custom Fonts */}
+        <link href="../../styles/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        {/* CSS only */}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+        {/* JS, Popper.js, and jQuery */}
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"/>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" />
       </Head>
 
       <main className={styles.main}>
+
+        <navigation />
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
