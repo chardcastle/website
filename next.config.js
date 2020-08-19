@@ -38,19 +38,20 @@ module.exports = (phase, defaultConfig ) => {
     publicRuntimeConfig: {
       // Will be available on both server and client
       staticFolder: '/static',
+      siteUrl: 'http://chrishardcastle.co.uk'
     },
   };
 
   console.log(`Phase is ${phase}`);
-  const envVars = {};
+
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     /* development only config options here */
     // envVars.assetPrefix = `${path.join(__dirname)}`;
-
+    appConfig.publicRuntimeConfig.siteUrl = 'http://somethingelse.com';
     console.log('local!');
   }
 
-  const config = Object.assign({}, defaultConfig, appConfig, envVars);
+  const config = Object.assign({}, defaultConfig, appConfig);
   console.log(config);
   return config;
 }

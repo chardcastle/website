@@ -3,10 +3,6 @@ import styles from './index.module.css';
 import constants from '../../src/constants';
 import Navigation from '../../src/components/navigation';
 
-import getConfig from 'next/config'
-
-const { publicRuntimeConfig, basePath } = getConfig()
-
 export default function Home() {
   return (
     <div className={styles.container}>
