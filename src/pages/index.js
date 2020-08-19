@@ -3,6 +3,10 @@ import styles from './index.module.css';
 import constants from '../../src/constants';
 import Navigation from '../../src/components/navigation';
 
+import getConfig from 'next/config'
+
+const { publicRuntimeConfig, basePath } = getConfig()
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -22,17 +26,6 @@ export default function Home() {
         <title>{constants.SITE_TITLE}</title>
         <link rel="icon" href="/favicon.ico" />
 
-        {/* Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ */}
-        <link href="../../styles/css/bootstrap.min.css" rel="stylesheet" />
-
-        {/* Custom CSS */}
-        <link href="../../styles/css/ch-style.min.css?cache=4" rel="stylesheet" />
-
-        {/* Custom Fonts */}
-        <link href="../../styles/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-
         {/* CSS only */}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossOrigin="anonymous" />
 
@@ -40,6 +33,15 @@ export default function Home() {
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossOrigin="anonymous"/>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossOrigin="anonymous"/>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossOrigin="anonymous" />
+
+        {/* Custom CSS */}
+        <link href={`/css/the-styles.min.css`} rel="stylesheet" />
+
+        {/* Custom Fonts */}s
+        <link href={`/css/font-awesome.min.css`} rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
       </Head>
 
       <main className={styles.main}>

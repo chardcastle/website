@@ -1,6 +1,6 @@
 
-// import debug from 'debug';
-// debug('Running index page');
+import debug from 'debug';
+debug('Running index page');
 
 // TODO Possible styles usage?
 // <div className={styles.container}>
