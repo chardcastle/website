@@ -1,23 +1,22 @@
-
 import debug from 'debug';
+import styles from './navigation.module.css';
+var classNames = require('classnames');
 debug('Running index page');
 
-// TODO Possible styles usage?
-// <div className={styles.container}>
-
+const navigationClasses = classNames('navbar', 'navbar-default', 'navbar-fixed-top');
 export default function Navigation() {
   return (
     // Navigation
-    <nav className="navbar navbar-default navbar-fixed-top">
+    <nav className={navigationClasses}> {/* className="navbar navbar-default navbar-fixed-top">*/}
       <div className="container">
         {/* Brand and toggle get grouped for better mobile display */}
         <div className="navbar-header page-scroll">
           <button type="button" className="navbar-toggle" data-toggle="collapse"
                   data-target="#bs-example-navbar-collapse-1">
             <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
+            <span className="icon-bar" />
+            <span className="icon-bar" />
+            <span className="icon-bar" />
           </button>
           <a className="navbar-brand" href="#page-top">Chris Hardcastle</a>
         </div>

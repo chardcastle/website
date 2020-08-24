@@ -6,10 +6,20 @@
   section#default.first {
     padding-top: 75px;
   }
-}#experience .experience-item {
+}
+
+/*.someId {*/
+/*  background: #badfad;*/
+/*  width: 150px;*/
+/*  height: 150px;*/
+/*  display: block;*/
+/*}*/
+
+#experience .experience-item {
    margin: 0 0 15px;
    right: 0;
- }
+}
+
 #experience .experience-item .experience-link {
   display: block;
   position: relative;
@@ -224,12 +234,7 @@ button.btn-success:active, button.btn-success:focus, button.btn-success:hover, b
   background-color: #16afb9;
   border-color: #16afb9;
 }
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  color: #16afb9;
-}
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color: #16afb9;
-}
+
 #stack li {
   padding: 0 0 12px;
 }
