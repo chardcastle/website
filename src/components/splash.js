@@ -1,7 +1,8 @@
-export default function Header() {
+import Container from 'react-bootstrap/Container';
+export default function Splash() {
   return (
     <header>
-      <div className="container">
+      <Container>
         <div className="row">
           <div className="col-lg-12">
             <img className="img-responsive" src="/img/profile.png?cache=1" alt="" />
@@ -18,7 +19,7 @@ export default function Header() {
               </div>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   )
 }

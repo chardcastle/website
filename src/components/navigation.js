@@ -1,9 +1,10 @@
 import debug from 'debug';
 import styles from './navigation.module.css';
+
 var classNames = require('classnames');
 debug('Running index page');
 
-const navigationClasses = classNames('navbar', 'navbar-default', 'navbar-fixed-top');
+const navigationClasses = classNames(styles.navbar, styles.navbarDefault, styles.navbarFixedTop);
 export default function Navigation() {
   return (
     // Navigation
