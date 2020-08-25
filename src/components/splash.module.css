@@ -1,0 +1,36 @@
+header .splash {
+    text-align: center;
+    background: #16afb9;
+    color: #fff;
+}
+header .splash .container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+header .splash img {
+    display: block;
+    margin: 0 auto 20px;
+}
+header .splash .intro-text .name {
+    display: block;
+    font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+header .splash .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+@media (min-width: 768px) {
+    header .splash .container {
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    header .splash .intro-text .name {
+        font-size: 4.75em;
+    }
+    header .splash .intro-text .skills {
+        font-size: 1.75em;
+    }
+}

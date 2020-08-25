@@ -35,9 +35,9 @@ class HeadElement extends React.Component {
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossOrigin="anonymous" />
 
             {/* Custom CSS */}
-            <link href="/css/the-styles.min.css" rel="stylesheet" />
+            {/*<link href="/css/the-styles.min.css" rel="stylesheet" />*/}
 
-            {/* Custom Fonts */}s
+            {/* Custom Fonts */}
             <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
             <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
             <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
