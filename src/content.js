@@ -14,8 +14,8 @@ const appContent = {
   ogUrl: publicRuntimeConfig.siteUrl,
   ogImage: `${publicRuntimeConfig.siteUrl}/img/profile.png`,
   ogDescription: `${myTitle} is a senior software developer from the UK`,
-  experience: {
-    thirdBridge: {
+  experiences: [
+    {
       title: 'Third Bridge',
       paragraphs: [
         'As a software development engineer, this role was a trainsition to a more NodeJS orientated role.',
@@ -34,7 +34,7 @@ const appContent = {
         },
       ],
     },
-    eagleEyeSolutions: {
+    {
       title: 'Eagle Eye Solutions',
       paragraphs: [
         'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. These were MVP’s, custom and product features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
@@ -53,7 +53,7 @@ const appContent = {
         },
       ]
     },
-    splashCreative: {
+    {
       title: 'Splash Worldwide',
       paragraphs: [
         'I\'ve undertaken a number of projects with Splash, these have all been excellent exercises for my technical development skills.',
@@ -72,7 +72,7 @@ const appContent = {
         },
       ],
     },
-    bafta: {
+    {
       title: 'BAFTA',
       paragraphs: [
         'Lead Developer building a front-end single page application prototype for a digital MVP.',
@@ -89,7 +89,7 @@ const appContent = {
         },
       ]
     },
-    netEfficiency: {
+    {
       title: 'Net Efficiency',
       paragraphs: [
         'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. It’s the number one site for vehicle glass repair and replacements.',
@@ -107,7 +107,7 @@ const appContent = {
         },
       ]
     },
-    generalOpticalCouncil: {
+    {
       title: 'General Optical Council',
       paragraphs: [
         'I was the lead developer on an e-learning management platform for the General Optical Council. This included the design, development, testing and support of new features for around 20 thousand active users.',
@@ -126,7 +126,7 @@ const appContent = {
         },
       ]
     },
-    thinkEmotive: {
+    {
       title: 'emotive (Global Healthcare Communications Agency)',
       paragraphs: [
         'There\'s a number of really interesting projects that I took with emotive:',
@@ -147,9 +147,9 @@ const appContent = {
           listTitle: 'Clients:',
           listValues: 'Eylea, Bayer, Sativex, EMD Serono',
         },
-      ]
+      ],
     }
-  }
+  ]
 }
 
 export default appContent;

@@ -1,0 +1,45 @@
+.experience-item {
+    margin: 0 0 15px;
+    right: 0;
+}
+.experience-item .experience-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.experience-item .experience-link .caption {
+    background: rgba(22, 175, 185, 0.9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+.experience-item .experience-link .caption:hover {
+    opacity: 1;
+}
+.experience-item .experience-link .caption .caption-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff;
+}
+.experience-item .experience-link .caption .caption-content i {
+    margin-top: -12px;
+}
+.experience-item .experience-link .caption .caption-content h3,
+.experience-item .experience-link .caption .caption-content h4 {
+    margin: 0;
+}
+@media (min-width: 767px) {
+    .experience-item {
+        margin: 0 0 30px;
+    }
+}

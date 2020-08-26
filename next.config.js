@@ -1,7 +1,8 @@
-import constants from './src/constants';
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+const appConstants = require('./src/constants');
 
-module.exports = (phase, defaultConfig ) => {
+const {PHASE_DEVELOPMENT_SERVER} = require('next/constants')
+
+module.exports = (phase, defaultConfig) => {
   const appConfig = {
     cssModules: true,
     serverRuntimeConfig: {
@@ -11,13 +12,13 @@ module.exports = (phase, defaultConfig ) => {
     publicRuntimeConfig: {
       // Will be available on both server and client
       staticFolder: '/static',
-      siteUrl: 'http://chrishardcastle.co.uk'
+      siteUrl: 'http://chrishardcastle.co.uk',
+      visibleExperiences:
+        [
+          appConstants.EAGLE_EYE_SOLUTIONS,
+          appConstants.THIRD_BRIDGE,
+        ]
     },
-    visibleExperiences:
-    [
-      constants.EAGLE_EYE_SOLUTIONS,
-      constants.THIRD_BRIDGE,
-    ]
   };
 
   console.log(`Detected ${phase}`);
