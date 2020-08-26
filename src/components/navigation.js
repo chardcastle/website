@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export default function Navigation() {
   return (
     <Navbar collapseOnSelect className={styles.bg} expand="lg" variant="dark">
-      <Navbar.Brand href="#home">Chris Hardcastle</Navbar.Brand>
+      <Navbar.Brand href="#home" className={styles.title}>Chris Hardcastle</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" />

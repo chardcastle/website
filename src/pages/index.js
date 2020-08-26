@@ -1,4 +1,4 @@
-import styles from './index.module.css';
+
 import HeadElement from '../components/headElement';
 import Navigation from '../components/navigation';
 import Splash from "../components/splash";
