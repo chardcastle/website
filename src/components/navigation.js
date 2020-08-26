@@ -12,9 +12,6 @@ export default function Navigation() {
         <Nav>
           <Nav.Link href="#about">About</Nav.Link>
           <Nav.Link href="/cv/chris-hardcastle-cv.pdf" target="_blank">CV (PDF)</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
-          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

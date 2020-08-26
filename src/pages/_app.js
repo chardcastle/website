@@ -1,4 +1,4 @@
-// // Importing the Bootstrap CSS
+// Importing the Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, {useEffect} from 'react';
 

@@ -1,3 +1,4 @@
+import constants from './src/constants';
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
 module.exports = (phase, defaultConfig ) => {
@@ -12,6 +13,11 @@ module.exports = (phase, defaultConfig ) => {
       staticFolder: '/static',
       siteUrl: 'http://chrishardcastle.co.uk'
     },
+    visibleExperiences:
+    [
+      constants.EAGLE_EYE_SOLUTIONS,
+      constants.THIRD_BRIDGE,
+    ]
   };
 
   console.log(`Detected ${phase}`);

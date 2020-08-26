@@ -1,15 +1,21 @@
-
 import HeadElement from '../components/headElement';
 import Navigation from '../components/navigation';
 import Splash from "../components/splash";
+import Experience from "../components/experience";
+import React from 'react';
+import content from '../content';
 
 
 export default function Home() {
   return (
     <>
-      <HeadElement />
-      <Navigation />
-      <Splash />
+      <HeadElement content={content} />
+
+      <Navigation content={content} />
+
+      <Experience content={content} />
+
+      <Splash content={content} />
 
       {/* Experience Section */}
       <section id="experience">
