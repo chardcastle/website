@@ -11,7 +11,7 @@ export default function Splash() {
             <img className={styles.imgCentered} src="/img/profile.png?cache=1" alt="" />
               <div className={styles.introText}>
                 <span className={styles.name}>Software Engineer</span>
-                <Divider />
+                <Divider type="code-light"/>
                   <span className={styles.skills}>
                     PHP / Javascript&nbsp;&nbsp;
                     <i className="fa fa-star" />&nbsp;&nbsp;

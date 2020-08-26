@@ -1,13 +1,9 @@
-
-
 import React from "react";
 
-
 export default function Divider(props) {
-
   return (
     <>
-      <hr className="code-light" />
+      <hr className={props.type} />
       <style jsx>{`
         .code-light,
         .code-primary {
