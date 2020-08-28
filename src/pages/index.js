@@ -13,93 +13,93 @@ export default function Home() {
 
       <Navigation content={content} />
 
-      <Experience content={content} />
-
       <Splash content={content} />
 
       {/* Experience Section */}
-      <section id="experience">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2>Experience</h2>
-              <hr className="code-primary" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal0" className="experience-link" data-toggle="modal" data-backdrop="static" data-keyboard="true">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/eagleeye.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal1" className="experience-link" data-toggle="modal">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/burberry.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal2" className="experience-link" data-toggle="modal">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/bafta.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal3" className="experience-link" data-toggle="modal">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/belron.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal4" className="experience-link" data-toggle="modal">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/goc.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal5" className="experience-link" data-toggle="modal">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/emotive.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-            <div className="col-sm-4 experience-item">
-              <a href="#experienceModal6" className="experience-link" data-toggle="modal">
-                <div className="caption">
-                  <div className="caption-content">
-                    <i className="fa fa-search-plus fa-3x"></i>
-                  </div>
-                </div>
-                <img src="/img/experience/splash.png" className="img-responsive" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Experience content={content} />
+
+      {/*<section id="experience">*/}
+      {/*  <div className="container">*/}
+      {/*    <div className="row">*/}
+      {/*      <div className="col-lg-12 text-center">*/}
+      {/*        <h2>Experience</h2>*/}
+      {/*        <hr className="code-primary" />*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="row">*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal0" className="experience-link" data-toggle="modal" data-backdrop="static" data-keyboard="true">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/eagleeye.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal1" className="experience-link" data-toggle="modal">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/burberry.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal2" className="experience-link" data-toggle="modal">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/bafta.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal3" className="experience-link" data-toggle="modal">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/belron.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal4" className="experience-link" data-toggle="modal">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/goc.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal5" className="experience-link" data-toggle="modal">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/emotive.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4 experience-item">*/}
+      {/*        <a href="#experienceModal6" className="experience-link" data-toggle="modal">*/}
+      {/*          <div className="caption">*/}
+      {/*            <div className="caption-content">*/}
+      {/*              <i className="fa fa-search-plus fa-3x"></i>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*          <img src="/img/experience/splash.png" className="img-responsive" alt="" />*/}
+      {/*        </a>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       {/* Stack Section */}
       <section className="success" id="stack">

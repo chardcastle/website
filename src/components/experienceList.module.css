@@ -1,14 +1,28 @@
-.experience-item {
+#experience * {
+    z-index: 2;
+}
+
+.item {
     margin: 0 0 15px;
     right: 0;
 }
-.experience-item .experience-link {
+
+@media (min-width: 767px) {
+    .experience-item {
+        margin: 0 0 30px;
+        border: 2px solid pink;
+
+    }
+}
+
+.link {
     display: block;
     position: relative;
     max-width: 400px;
     margin: 0 auto;
 }
-.experience-item .experience-link .caption {
+
+.caption {
     background: rgba(22, 175, 185, 0.9);
     position: absolute;
     width: 100%;
@@ -18,10 +32,11 @@
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
 }
-.experience-item .experience-link .caption:hover {
+
+.caption:hover {
     opacity: 1;
 }
-.experience-item .experience-link .caption .caption-content {
+.content {
     position: absolute;
     width: 100%;
     height: 20px;
@@ -31,15 +46,18 @@
     margin-top: -12px;
     color: #fff;
 }
-.experience-item .experience-link .caption .caption-content i {
+.content i {
     margin-top: -12px;
 }
-.experience-item .experience-link .caption .caption-content h3,
-.experience-item .experience-link .caption .caption-content h4 {
+
+.content h3,
+.content h4 {
     margin: 0;
 }
-@media (min-width: 767px) {
-    .experience-item {
-        margin: 0 0 30px;
-    }
+
+.link img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
