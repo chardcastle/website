@@ -2,8 +2,6 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import React, {useState} from "react";
 var debug = require('debug')('app');
-import styles from './experience.module.css';
-
 export default function ExperienceList(props) {
 
   const [show, setShow] = useState(false);
@@ -13,10 +11,16 @@ export default function ExperienceList(props) {
 
   const { experiences } = props;
   const listItems = experiences.map((experience) =>
-    <li>
-      {experience.title}
-
-    </li>
+    <div className="col-sm-4 experience-item">
+      <a onClick={handleShow}>
+        <div className="caption">
+          <div className="caption-content">
+            <i className="fa fa-search-plus fa-3x" />
+          </div>
+        </div>
+        <img src={experience.thumbnail} className="img-responsive" alt="" />
+      </a>
+    </div>
 
   );
 

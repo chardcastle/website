@@ -17,6 +17,7 @@ const appContent = {
   experiences: [
     {
       title: 'Third Bridge',
+      thumbnail: '/img/experience/thirdbridge.png',
       paragraphs: [
         'As a software development engineer, this role was a trainsition to a more NodeJS orientated role.',
         'Using Microsystems as a means to defuse a legacy monolith.',
@@ -36,6 +37,7 @@ const appContent = {
     },
     {
       title: 'Eagle Eye Solutions',
+      thumbnail: '/img/experience/eagleeye.png',
       paragraphs: [
         'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. These were MVP’s, custom and product features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
         'Leading the team to design, build and deliver a legacy XML based EPoS API within the AIR platform, assisting and supporting the migration of new and existing well known high street retailers to this service. Expanding the solution to include EES digital wallet products and consumer search for JDSports.',
@@ -55,6 +57,7 @@ const appContent = {
     },
     {
       title: 'Splash Worldwide',
+      thumbnail: '/img/experience/splash.png',
       paragraphs: [
         'I\'ve undertaken a number of projects with Splash, these have all been excellent exercises for my technical development skills.',
         'The first piece of work as built around a spreadsheet reader. A user could upload a file via the interface that I designed which was then processed in the API that I built. There was some work flow process built around the results that were presented shortly afterwards. I\'ve since learned that the tool is a large success, resulting in the saving of time and money.',
@@ -74,6 +77,7 @@ const appContent = {
     },
     {
       title: 'BAFTA',
+      thumbnail: '/img/experience/bafta.png',
       paragraphs: [
         'Lead Developer building a front-end single page application prototype for a digital MVP.',
         'Also assisted with API and Amazon AWS infrastructure as a service, along with a ReactJS based technical spike and proposal.',
@@ -91,6 +95,7 @@ const appContent = {
     },
     {
       title: 'Net Efficiency',
+      thumbnail: '/img/experience/belron.png',
       paragraphs: [
         'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. It’s the number one site for vehicle glass repair and replacements.',
         'I styled the customer portal in which customers can manage their online appointments. I built the landing page in which customers specify the vehicle glass damage. I was instrumental in solving some design and functionality issues in this area and produced some of the graphics myself. My work was a graceful expansion around a complex and pre-existing Zend based solution.',
@@ -109,6 +114,7 @@ const appContent = {
     },
     {
       title: 'General Optical Council',
+      thumbnail: '/img/experience/goc.png',
       paragraphs: [
         'I was the lead developer on an e-learning management platform for the General Optical Council. This included the design, development, testing and support of new features for around 20 thousand active users.',
         'This also included a range of amends to existing features. The system covered all UK GOC registered opticians and helped the client determine who is inline with their legal obligations.',
@@ -128,6 +134,7 @@ const appContent = {
     },
     {
       title: 'emotive (Global Healthcare Communications Agency)',
+      thumbnail: '/img/experience/emotive.png',
       paragraphs: [
         'There\'s a number of really interesting projects that I took with emotive:',
         `${('Augmentin, dosage browser app:').bold()} Using BackboneJS and UnderscoreJS, I built a Javascript based iPhone app for a client that manufactured a drug called Augmentin. It included user interaction feature in the style and design of a bathroom scale. A slider could be used to display dosage data in real time. The work was wrapped up in Cordova for over the air installations on iPhone and Android devices. It was intended as promotional material for doctors in support of the brand. My skills with Backbone were instrumental in providing a manageable and flexible framework for all the JavaScript dependencies of this project.`,
