@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Modal from 'react-bootstrap/Modal';
 import ExperienceList from './experienceList';
 import Divider from './divider';
 
