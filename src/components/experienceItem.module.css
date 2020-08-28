@@ -6,10 +6,7 @@
     margin: 0 0 15px;
     right: 0;
 }
-.expBackdrop {
-    opacity: 0.2 !important;
-    background: #cccccc;
-}
+
 @media (min-width: 767px) {
     .experience-item {
         margin: 0 0 30px;
@@ -57,7 +54,14 @@
 .content h4 {
     margin: 0;
 }
-
+.experienceDescription ul {
+    padding-left: 0;
+}
+.experienceDescription ul li {
+    list-style-type: none;
+    list-style-image: none;
+    padding: 0;
+}
 .link img {
     display: block;
     max-width: 100%;

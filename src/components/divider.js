@@ -5,8 +5,8 @@ export default function Divider(props) {
     <>
       <hr className={props.type} />
       <style jsx>{`
-        .code-light,
-        .code-primary {
+        .line-primary,
+        .line-default {
             padding: 0;
             border: none;
             border-top: solid 5px;
@@ -14,8 +14,7 @@ export default function Divider(props) {
             max-width: 250px;
             margin: 25px auto 30px;
         }
-        .code-light:after,
-        .code-primary:after {
+        .line-primary:after {
             content: "\f121";
             font-family: "FontAwesome", Arial, sans-serif;
             display: inline-block;
@@ -24,10 +23,10 @@ export default function Divider(props) {
             font-size: 2em;
             padding: 0 0.25em;
         }
-        .code-light {
+        .line-primary {
             border-color: #fff;
         }
-        .code-light:after {
+        .line-primary:after {
             background-color: #16afb9;
             color: #fff;
         }

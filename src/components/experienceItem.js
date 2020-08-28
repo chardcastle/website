@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import styles from "./experienceList.module.css";
+import styles from "./experienceItem.module.css";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 const cx = require('classnames');
 
 function ExperienceItem(props) {
-  const { experience, index } = props;
+  const { experience } = props;
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -23,7 +23,9 @@ function ExperienceItem(props) {
           <img src={experience.thumbnail} className="img-responsive" alt="" />
         </a>
       </div>
-      <Modal show={show} onHide={handleClose} animation={false}>
+      <Modal show={show} onHide={handleClose}
+             dialogClassName={styles.experienceDescription}
+             animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>{experience.title}</Modal.Title>
         </Modal.Header>
@@ -31,24 +33,13 @@ function ExperienceItem(props) {
           {experience.paragraphs && experience.paragraphs.map((paragraph, i) => {
             return (<p>{paragraph}</p>)
           })}
-          {/*<p>As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. These were MVP’s, custom and product features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.</p>*/}
-          {/*<p>Leading the team to design, build and deliver a legacy XML based EPoS API within the AIR platform, assisting and supporting the migration of new and existing well known high street retailers to this service. Expanding the solution to include EES digital wallet products and consumer search for JDSports.</p>*/}
-          {/*<p>Writing console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. Other scripts I wrote searched for and reported on financial transactions, campaign activity and consumer data.</p>*/}
-          {/*<p>Innovation with technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.</p>*/}
-          {/*<ul className="list-inline item-details">*/}
-          {/*  <li>Client:&nbsp;*/}
-          {/*    <strong>Eagle Eye Solutions*/}
-          {/*    </strong>*/}
-          {/*  </li>*/}
-          {/*  <li>Date:&nbsp;*/}
-          {/*    <strong>August 2016 - Present*/}
-          {/*    </strong>*/}
-          {/*  </li>*/}
-          {/*  <li>Skills used:&nbsp;*/}
-          {/*    <strong>PHP, MySQL, RabbitMQ, Javascript, Docker, Swagger, JSON*/}
-          {/*    </strong>*/}
-          {/*  </li>*/}
-          {/*</ul>*/}
+          <br />
+          {experience.lists && experience.lists.map((list, i) => {
+            return (<ul>
+              <li><strong>{list.listTitle}</strong></li>
+              <li>{list.listValues}</li>
+            </ul>)
+          })}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

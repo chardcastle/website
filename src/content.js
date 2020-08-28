@@ -124,11 +124,11 @@ const appContent = {
       lists: [
         {
           listTitle: 'Date:',
-          listValues: ''
+          listValues: 'June 2013 – February 2015 (1 year 9 months)'
         },
         {
           listTitle: 'Skills / software',
-          listValues: '',
+          listValues: 'YII (PHP), MySQL, SVN',
         },
       ]
     },
