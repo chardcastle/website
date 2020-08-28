@@ -6,7 +6,10 @@
     margin: 0 0 15px;
     right: 0;
 }
-
+.expBackdrop {
+    opacity: 0.2 !important;
+    background: #cccccc;
+}
 @media (min-width: 767px) {
     .experience-item {
         margin: 0 0 30px;
