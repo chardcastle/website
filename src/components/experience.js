@@ -1,9 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import ExperienceList from './experienceList';
 import Divider from './divider';
 
-function Experience(props) {
+export default class Experience extends React.Component {
+  static get propTypes() {
+    return {
+      experiences: PropTypes.object,
+    };
+  }
+
+  render() {
+    const { experiences } = this.props;
+
     return (
       <section id="experience">
         <Container>
@@ -14,13 +24,12 @@ function Experience(props) {
             </div>
           </div>
           <div className="row">
-            <ExperienceList experiences={props.content.experiences} />
+            {experiences &&
+              <ExperienceList experiences={experiences}/>
+            }
           </div>
         </Container>
       </section>
     )
+  }
 }
-
-export default Experience;
-
-
