@@ -15,7 +15,7 @@ export default function Home() {
 
       <Splash content={content} />
 
-      <Experience content={content} />
+      <Experience experiences={content.experiences} />
 
       {/* Stack Section */}
       <section className="success" id="stack">
@@ -143,7 +143,7 @@ export default function Home() {
       </div>
 
       {/* Experience Modals */}
-      <div className="experience-modal modal fade" id="experienceModal0" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal0" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
@@ -183,7 +183,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="experience-modal modal fade" id="experienceModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal1" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
@@ -221,7 +221,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience-modal modal fade" id="experienceModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal2" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
@@ -258,7 +258,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience-modal modal fade" id="experienceModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal3" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
@@ -296,7 +296,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience-modal modal fade" id="experienceModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal4" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
@@ -335,7 +335,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience-modal modal fade" id="experienceModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal5" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
@@ -378,7 +378,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="experience-modal modal fade" id="experienceModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div className="experience-modal modal fade" id="experienceModal6" tabIndex="-1" role="dialog" aria-hidden="true">
         <div className="modal-content">
           <div className="close-modal" data-dismiss="modal">
             <div className="lr">
