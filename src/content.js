@@ -1,7 +1,6 @@
-import getConfig from "next/config";
-import React from "react";
+import getConfig from 'next/config';
 
-const {publicRuntimeConfig} = getConfig();
+const { publicRuntimeConfig } = getConfig();
 
 const myTitle = 'Chris Hardcastle';
 
@@ -53,7 +52,7 @@ const appContent = {
           listTitle: 'Skills / software:',
           listValues: 'PHP, MySQL, RabbitMQ, JavaScript, Docker, Swagger, JSON',
         },
-      ]
+      ],
     },
     {
       title: 'Splash Worldwide',
@@ -89,9 +88,9 @@ const appContent = {
         },
         {
           listTitle: 'Skills / software',
-          listValues: 'ReactJS, Flux, AWS, BackboneJS, RequireJS, UnderscoreJS, GIT, Scrum, Vagrant, Symfony 2, PHPUnit, Mocha, Selenium'
+          listValues: 'ReactJS, Flux, AWS, BackboneJS, RequireJS, UnderscoreJS, GIT, Scrum, Vagrant, Symfony 2, PHPUnit, Mocha, Selenium',
         },
-      ]
+      ],
     },
     {
       title: 'Net Efficiency',
@@ -104,13 +103,13 @@ const appContent = {
       lists: [
         {
           listTitle: 'Date:',
-          listValues: 'March 2015 - December 2015 (contract)'
+          listValues: 'March 2015 - December 2015 (contract)',
         },
         {
           listTitle: 'Skills / software',
-          listValues: 'PHP 5, Zend version 1 and 2, Composer, MySQL, GIT, HTML, CSS, jQuery'
+          listValues: 'PHP 5, Zend version 1 and 2, Composer, MySQL, GIT, HTML, CSS, jQuery',
         },
-      ]
+      ],
     },
     {
       title: 'General Optical Council',
@@ -124,13 +123,13 @@ const appContent = {
       lists: [
         {
           listTitle: 'Date:',
-          listValues: 'June 2013 – February 2015 (1 year 9 months)'
+          listValues: 'June 2013 – February 2015 (1 year 9 months)',
         },
         {
           listTitle: 'Skills / software',
           listValues: 'YII (PHP), MySQL, SVN',
         },
-      ]
+      ],
     },
     {
       title: 'emotive (Global Healthcare Communications Agency)',
@@ -144,7 +143,7 @@ const appContent = {
       lists: [
         {
           listTitle: 'Date:',
-          listValues: 'June 2013 – February 2015 (1 year 9 months)'
+          listValues: 'June 2013 – February 2015 (1 year 9 months)',
         },
         {
           listTitle: 'Skills / software:',
@@ -155,8 +154,8 @@ const appContent = {
           listValues: 'Eylea, Bayer, Sativex, EMD Serono',
         },
       ],
-    }
-  ]
-}
+    },
+  ],
+};
 
 export default appContent;

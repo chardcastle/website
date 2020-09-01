@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "production": "NODE_ENV=production && npm run build"
+    "production": "NODE_ENV=production && npm run build",
+    "lint": "npx eslint src/",
+    "lint-fix": "npx eslint src/ --fix"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
