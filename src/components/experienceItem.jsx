@@ -10,7 +10,10 @@ function ExperienceItem(props) {
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = (e) => {
+    e.preventDefault();
+    setShow(true);
+  };
 
   return (
     <>
@@ -58,7 +61,7 @@ function ExperienceItem(props) {
 }
 
 ExperienceItem.propTypes = {
-  experience: PropTypes.shape({
+  experience: PropTypes.exact({
     title: PropTypes.string,
     slug: PropTypes.string,
     thumbnail: PropTypes.string,
