@@ -15,7 +15,7 @@ function ExperienceItem(props) {
   return (
     <>
       <div className={cx('col-sm-4', styles.item)}>
-        <a onClick={handleShow} className={styles.link}>
+        <a href={`/${experience.slug}`} onClick={handleShow} className={styles.link}>
           <div className={styles.caption}>
             <div className={styles.content}>
               <i className="fa fa-search-plus fa-3x" />
@@ -58,10 +58,17 @@ function ExperienceItem(props) {
 }
 
 ExperienceItem.propTypes = {
-  experience: PropTypes.objectOf({
+  experience: PropTypes.shape({
     title: PropTypes.string,
-    lists: PropTypes.array,
-    paragraphs: PropTypes.array,
+    slug: PropTypes.string,
+    thumbnail: PropTypes.string,
+    lists: PropTypes.arrayOf(PropTypes.shape({
+      listTitle: PropTypes.string,
+      listValues: PropTypes.string,
+    })),
+    paragraphs: PropTypes.arrayOf(
+      PropTypes.string,
+    ),
   }).isRequired,
 };
 

@@ -16,6 +16,7 @@ const appContent = {
   experiences: [
     {
       title: 'Third Bridge',
+      slug: 'third-bridge',
       thumbnail: '/img/experience/thirdbridge.png',
       paragraphs: [
         'As a software development engineer, this role was a trainsition to a more NodeJS orientated role.',
@@ -36,6 +37,7 @@ const appContent = {
     },
     {
       title: 'Eagle Eye Solutions',
+      slug: 'eagle-eye-solutions',
       thumbnail: '/img/experience/eagleeye.png',
       paragraphs: [
         'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. These were MVP’s, custom and product features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
@@ -56,6 +58,7 @@ const appContent = {
     },
     {
       title: 'Splash Worldwide',
+      slug: 'splash-worldwide',
       thumbnail: '/img/experience/splash.png',
       paragraphs: [
         'I\'ve undertaken a number of projects with Splash, these have all been excellent exercises for my technical development skills.',
@@ -76,6 +79,7 @@ const appContent = {
     },
     {
       title: 'BAFTA',
+      slug: 'bafta',
       thumbnail: '/img/experience/bafta.png',
       paragraphs: [
         'Lead Developer building a front-end single page application prototype for a digital MVP.',
@@ -94,6 +98,7 @@ const appContent = {
     },
     {
       title: 'Net Efficiency',
+      slug: 'net-efficiency',
       thumbnail: '/img/experience/belron.png',
       paragraphs: [
         'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. It’s the number one site for vehicle glass repair and replacements.',
@@ -113,6 +118,7 @@ const appContent = {
     },
     {
       title: 'General Optical Council',
+      slug: 'general-optical-council',
       thumbnail: '/img/experience/goc.png',
       paragraphs: [
         'I was the lead developer on an e-learning management platform for the General Optical Council. This included the design, development, testing and support of new features for around 20 thousand active users.',
@@ -133,6 +139,7 @@ const appContent = {
     },
     {
       title: 'emotive (Global Healthcare Communications Agency)',
+      slug: 'emotive',
       thumbnail: '/img/experience/emotive.png',
       paragraphs: [
         'There\'s a number of really interesting projects that I took with emotive:',
