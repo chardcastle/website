@@ -38,7 +38,7 @@ function ExperienceItem(props) {
             <p>{paragraph}</p>
           ))}
           <br />
-          {experience.lists && experience.lists.map((list, i) => (
+          {experience.lists && experience.lists.map((list) => (
             <ul>
               <li><strong>{list.listTitle}</strong></li>
               <li>{list.listValues}</li>
