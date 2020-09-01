@@ -1,0 +1,10 @@
+.title {
+
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+.appSection {
+    padding: 100px 0;
+}

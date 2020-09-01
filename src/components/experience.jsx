@@ -1,18 +1,18 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import ExperienceList from './experienceList';
 import Divider from './divider';
+import styles from './global.module.css';
 
 function Experience(props) {
   const { experiences } = props;
 
   return (
-    <section id="experience">
+    <section id="experience" className={styles.appSection}>
       <Container>
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2>Experience</h2>
+            <h2 className={styles.title}>Experience</h2>
             <Divider type="line-default" />
           </div>
         </div>
