@@ -1,0 +1,12 @@
+.bolt:after {
+    content: "\f0e7";
+    font-family: "FontAwesome", Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+    left: -0.8em;
+    font-size: 2em;
+}
+
+#stack ul {
+    margin: 0;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '../components/navigation';
 import Splash from '../components/splash';
 import Experience from '../components/experience';
+import Stack from '../components/stack';
 import content from '../content';
 
 export default function Home() {
@@ -14,53 +15,8 @@ export default function Home() {
       <Experience experiences={content.experiences} />
 
       {/* Stack Section */}
-      <section className="success" id="stack">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2>Technologies</h2>
-              <hr className="code-light" />
-            </div>
-          </div>
+      <Stack primary={content.stack.primary} secondary={content.stack.secondary} />
 
-          <div className="row">
-            <div className="col-sm-1">
-              <ul className="no-style">
-                <li><img src="/img/php-57.png" alt="PHP version 5 and 7" /></li>
-                <li><br/></li>
-                <li><img src="/img/mysql.png" alt="MySQL" /></li>
-              </ul>
-            </div>
-            <div className="col-sm-5">
-              <ul className="no-style">
-                <li><span className="glyphicon glyphicon-flash"></span>I enjoy using Laravel, Symfony PHP frameworks</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I know and use Zend, Yii and Wordpress</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I compile LESS or SASS for CSS and I write HTML with SEO in mind</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I use and build RESTful APIs suitable for AWS and GCP</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I host static front end websites on Amazon S3</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I use Composer and NPM for dependency management</li>
-              </ul>
-            </div>
-            <div className="col-sm-1">
-              <ul className="no-style">
-                <li><img src="/img/sf.png" alt="Symfony" /></li>
-                <li><br/></li>
-                <li><img src="/img/zf.png" alt="ZF" /></li>
-              </ul>
-            </div>
-            <div className="col-sm-5">
-              <ul className="no-style">
-                <li><span className="glyphicon glyphicon-flash"></span>I enjoy using Javascript to create web based single page applications</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I use Browserify or Webpack alongside modern task runners</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I use GIT on the terminal with GitHub and BitBucket accounts</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I use Docker containers for local development</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I Behat, Gerkin, PHPUnit for testing</li>
-                <li><span className="glyphicon glyphicon-flash"></span>I use virtual machines for browser testing</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section id="services">
@@ -87,7 +43,7 @@ export default function Home() {
               <ul className="no-style service-list">
                 <li><span className="glyphicon glyphicon-menu-right"></span>Write and maintain modern, robust and testable computer programming</li>
                 <li><span className="glyphicon glyphicon-menu-right"></span>Write and maintain unit, integration and acceptance tests for quality as
-                  <li><span className="glyphicon glyphicon-menu-right"></span>Deliver sprint goals, refine stories and provide estimates</li>surance</li>
+                <li><span className="glyphicon glyphicon-menu-right"></span>Deliver sprint goals, refine stories and provide estimates</li>surance</li>
                 <li><span className="glyphicon glyphicon-menu-right"></span>Provide Front and Back-end (API) design, development and maintenance</li>
                 <li><span className="glyphicon glyphicon-menu-right"></span>Integrate or build custom and product digital solutions and services</li>
               </ul>

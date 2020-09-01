@@ -1,4 +1,5 @@
 import getConfig from 'next/config';
+import React from "react";
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -163,6 +164,24 @@ const appContent = {
       ],
     },
   ],
+  stack: {
+    primary: [
+      'I enjoy using Laravel, Symfony PHP frameworks',
+      'I know and use Zend, Yii and Wordpress',
+      'I compile LESS or SASS for CSS and I write HTML with SEO in mind',
+      'I use and build RESTful APIs suitable for AWS and GCP',
+      'I host static front end websites on Amazon S3',
+      'I use Composer and NPM for dependency management',
+    ],
+    secondary: [
+      'I enjoy using Javascript to create web based single page applications',
+      'I use Browserify or Webpack alongside modern task runners',
+      'I use GIT on the terminal with GitHub and BitBucket accounts',
+      'I use Docker containers for local development',
+      'I Behat, Gerkin, PHPUnit for testing',
+      'I use virtual machines for browser testing',
+    ],
+  },
 };
 
 export default appContent;

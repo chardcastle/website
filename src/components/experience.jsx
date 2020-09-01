@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
-import ExperienceList from './experienceList';
 import Divider from './divider';
+import ExperienceList from './experienceList';
 import styles from './global.module.css';
 
 function Experience(props) {
