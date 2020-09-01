@@ -1,10 +1,13 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Divider(props) {
+function Divider(props) {
+  const { type } = props;
   return (
     <>
-      <hr className={props.type} />
-      <style jsx>{`
+      <hr className={type} />
+      <style jsx>
+        {`
         .line-primary,
         .line-default {
             padding: 0;
@@ -30,7 +33,14 @@ export default function Divider(props) {
             background-color: #16afb9;
             color: #fff;
         }
-      `}</style>
+      `}
+      </style>
     </>
-  )
+  );
 }
+
+Divider.propTypes = {
+  type: PropTypes.string.isRequired,
+};
+
+export default Divider;
