@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from 'react-bootstrap/Container';
 import cx from 'classnames';
 import styles from './splash.module.css';

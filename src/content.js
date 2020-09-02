@@ -1,5 +1,5 @@
 import getConfig from 'next/config';
-import React from "react";
+import React from 'react';
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -205,6 +205,9 @@ const appContent = {
       'Server maintenance, software and infrastructure as a service',
     ],
   },
+  about: 'I\'m a highly experienced, agile and knowledgeable senior software engineer,'
+    + 'with more than 10 years commercial expertise, providing both front and back-end '
+    + 'development services for digital products on mobile, EPoS and desktop devices.',
 };
 
 export default appContent;
