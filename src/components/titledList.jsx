@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import cx from 'classnames';
+import crypto from 'crypto';
 import globalStyles from './global.module.css';
 import styles from './titledList.module.css';
 
@@ -7,7 +8,7 @@ function TitledList(props) {
   const { listItems, title } = props;
 
   const listContent = listItems.map((line) => (
-    <li>
+    <li key={crypto.randomBytes(16).toString('hex')}>
       <span className={styles.bolt} />
       {line}
     </li>
