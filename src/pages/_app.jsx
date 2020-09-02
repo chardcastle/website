@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React from 'react';
 import Head from 'next/head';
+import PropTypes from 'prop-types';
+import React from 'react';
 import content from '../content';
 
-function MyApp ({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -13,5 +14,10 @@ function MyApp ({ Component, pageProps }) {
     </>
   );
 }
+
+MyApp.propTypes = {
+  Component: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  pageProps: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+};
 
 export default MyApp;
