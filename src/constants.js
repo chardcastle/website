@@ -1,2 +1,3 @@
-module.exports.THIRD_BRIDGE = 'THIRD_BRIDGE';
-module.exports.EAGLE_EYE_SOLUTIONS = 'EAGLE_EYE_SOLUTIONS';
+module.exports.SECTION_ABILITIES = 'abilities';
+module.exports.SECTION_AFFIRMATIONS = 'affirmations';
+module.exports.SECTION_KNOWLEDGE = 'knowledge';

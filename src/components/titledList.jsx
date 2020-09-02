@@ -1,18 +1,12 @@
 import PropTypes from 'prop-types';
 import cx from 'classnames';
-import crypto from 'crypto';
 import globalStyles from './global.module.css';
 import styles from './titledList.module.css';
+import TitledListItem from './titledListItem';
 
 function TitledList(props) {
-  const { listItems, title } = props;
+  const { listItems, title, type } = props;
 
-  const listContent = listItems.map((line) => (
-    <li key={crypto.randomBytes(16).toString('hex')}>
-      <span className={styles.bolt} />
-      {line}
-    </li>
-  ));
 
   return (
     <div className={cx('col-sm-4', styles.titledList, globalStyles.noStyle)}>
@@ -20,7 +14,7 @@ function TitledList(props) {
         {title}
       </h3>
       <ul>
-        {listContent}
+        {listItems.map((line) => <TitledListItem type={type} line={line} />)}
       </ul>
     </div>
   );
@@ -29,6 +23,7 @@ function TitledList(props) {
 TitledList.propTypes = {
   listItems: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default TitledList;

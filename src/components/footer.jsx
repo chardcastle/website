@@ -18,8 +18,7 @@ function Footer(props) {
         <Row>
           <Col>
             <h3 className={globalStyles.title}>Location</h3>
-            <p>London, UK</p>
-            <p>{content}</p>
+            <p>{content.location}</p>
           </Col>
           <Col className={globalStyles.noStyle}>
             <h3 className={globalStyles.title}>Around the Web</h3>
@@ -53,7 +52,9 @@ function Footer(props) {
       <Container className={styles.footerBelow} fluid>
         <Row>
           <Col>
-            Copyright &#169; Chris Hardcastle 2020
+            Copyright &#169;
+            {' '}
+            { content.signature }
           </Col>
         </Row>
       </Container>

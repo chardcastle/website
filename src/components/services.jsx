@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Divider from './divider';
 import globalStyles from './global.module.css';
 import TitledList from './titledList';
+import constants from '../constants'
 
 function Services(props) {
   const { services } = props;
@@ -16,9 +17,9 @@ function Services(props) {
           </div>
         </div>
         <div className="row">
-          <TitledList title="I am" listItems={services.affirmations} />
-          <TitledList title="I know" listItems={services.knowledge} />
-          <TitledList title="I can" listItems={services.abilities} />
+          <TitledList title="I am" listItems={services.affirmations} type={constants.SECTION_AFFIRMATIONS} />
+          <TitledList title="I know" listItems={services.knowledge} type={constants.SECTION_KNOWLEDGE} />
+          <TitledList title="I can" listItems={services.abilities} type={constants.SECTION_ABILITIES} />
         </div>
       </div>
     </section>
