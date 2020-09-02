@@ -208,6 +208,7 @@ const appContent = {
   about: 'I\'m a highly experienced, agile and knowledgeable senior software engineer,'
     + 'with more than 10 years commercial expertise, providing both front and back-end '
     + 'development services for digital products on mobile, EPoS and desktop devices.',
+  footer: 'foo',
 };
 
 export default appContent;

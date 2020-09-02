@@ -1,6 +1,6 @@
 import { FaArrowCircleUp } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import styles from './scrollTop.module.css';
 
