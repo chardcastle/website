@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import Navigation from '../components/navigation';
 import Splash from '../components/splash';
 import Experience from '../components/experience';
@@ -7,13 +6,9 @@ import Stack from '../components/stack';
 import Services from '../components/services';
 import content from '../content';
 import About from '../components/about';
-import ScrollTop from "../components/scrollTop";
-// import ScrollTop from '../components/ScrollArrow';
+import ScrollTop from '../components/scrollTop';
+import useWindowScrolled from '../hooks/useWindowScrolled';
 
-const Scroll = dynamic(
-  () => import('../components/scrollTop'),
-  { ssr: false },
-);
 export default function Home() {
   return (
     <>
@@ -27,11 +22,9 @@ export default function Home() {
 
       <Services services={content.services} />
 
-      {/* About Section */}
       <About content={content.about} />
 
-      {/*<Scroll />*/}
-      <ScrollTop scrollStepInPx="50" delayInMs="16.66" />
+      <ScrollTop scrollStepInPx="50" delayInMs="16.66" isVisible={useWindowScrolled()} />
 
 
       {/* Footer */}
