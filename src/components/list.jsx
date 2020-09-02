@@ -5,7 +5,7 @@ import globalStyles from './global.module.css';
 function List(props) {
   const { listContent } = props;
 
-  return (
+  return ( // TODO <Col>?
     <div className={cx('col-sm-5', globalStyles.noStyle)}>
       <ul>
         {listContent}

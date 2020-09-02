@@ -1,12 +1,19 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Navigation from '../components/navigation';
 import Splash from '../components/splash';
 import Experience from '../components/experience';
 import Stack from '../components/stack';
 import Services from '../components/services';
 import content from '../content';
-import About from "../components/about";
+import About from '../components/about';
+import ScrollTop from "../components/scrollTop";
+// import ScrollTop from '../components/ScrollArrow';
 
+const Scroll = dynamic(
+  () => import('../components/scrollTop'),
+  { ssr: false },
+);
 export default function Home() {
   return (
     <>
@@ -23,12 +30,9 @@ export default function Home() {
       {/* About Section */}
       <About content={content.about} />
 
-      {/* Scroll to Top Button (Only visible on small and extra-small screen sizes) */}
-      <div className="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a className="btn btn-primary" href="#page-top">
-          <i className="fa fa-chevron-up" />
-        </a>
-      </div>
+      {/*<Scroll />*/}
+      <ScrollTop scrollStepInPx="50" delayInMs="16.66" />
+
 
       {/* Footer */}
       <footer className="text-center">
@@ -43,16 +47,16 @@ export default function Home() {
                 <h3>Around the Web</h3>
                 <ul className="list-inline">
                   <li>
-                    <a href="https://uk.linkedin.com/in/chardcastle" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-linkedin"></i></a>
+                    <a href="https://uk.linkedin.com/in/chardcastle" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-linkedin" /></a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/hardcastle" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter"></i></a>
+                    <a href="https://twitter.com/hardcastle" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-twitter" /></a>
                   </li>
                   <li>
-                    <a href="https://github.com/chardcastle" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-github"></i></a>
+                    <a href="https://github.com/chardcastle" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-github" /></a>
                   </li>
                   <li>
-                    <a href="https://soundcloud.com/memesmusic" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-soundcloud"></i></a>
+                    <a href="https://soundcloud.com/memesmusic" target="_blank" className="btn-social btn-outline"><i className="fa fa-fw fa-soundcloud" /></a>
                   </li>
                 </ul>
               </div>
@@ -70,5 +74,5 @@ export default function Home() {
         </div>
       </footer>
     </>
-  )
+  );
 }
