@@ -22,7 +22,6 @@ class MyDocument extends Document {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
           <link rel="icon" href="/favicon.ico" />
-          <title>{content.appTitle}</title>
 
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content={content.appDescription} />

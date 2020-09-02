@@ -182,6 +182,29 @@ const appContent = {
       'I use virtual machines for browser testing',
     ],
   },
+  services: {
+    affirmations: [
+      'Used to working in an Agile Scrum or Kanban team',
+      'Passionate about publishing and writing',
+      'A creative photoshop user with interests in art and design',
+      'A keen badminton and guitar player',
+      'The father of two children, whom I love dearly',
+    ],
+    abilities: [
+      'Write and maintain modern, robust and testable computer programming',
+      'Write and maintain unit, integration and acceptance tests for quality assurance',
+      'Deliver sprint goals, refine stories and provide estimates',
+      'Provide Front and Back-end (API) design, development and maintenance',
+      'Integrate or build custom and product digital solutions and services',
+    ],
+    knowledge: [
+      'A range of open-source programming languages and frameworks',
+      'Digital loyalty programs, campaigns and schemes',
+      'Version control, release workflow and deployment strategies',
+      'Social media and have domain knowledge for banking, automotive and pharmaceutical industries',
+      'Server maintenance, software and infrastructure as a service',
+    ],
+  },
 };
 
 export default appContent;

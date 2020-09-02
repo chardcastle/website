@@ -3,6 +3,7 @@ import Navigation from '../components/navigation';
 import Splash from '../components/splash';
 import Experience from '../components/experience';
 import Stack from '../components/stack';
+import Services from '../components/services';
 import content from '../content';
 
 export default function Home() {
@@ -14,53 +15,51 @@ export default function Home() {
 
       <Experience experiences={content.experiences} />
 
-      {/* Stack Section */}
       <Stack primary={content.stack.primary} secondary={content.stack.secondary} />
 
-
-      {/* Services Section */}
-      <section id="services">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <h2>My services</h2>
-              <hr className="code-primary" />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-sm-4">
-              <h3>I am</h3>
-              <ul className="no-style service-list">
-                <li><span className="glyphicon glyphicon-menu-right"></span>Used to working in an Agile Scrum or Kanban team</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Passionate about publishing and writing</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>A creative photoshop user with interests in art and design</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>A keen badminton and guitar player</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>The father of two children, whom I love dearly</li>
-              </ul>
-            </div>
-            <div className="col-sm-4">
-              <h3>I can</h3>
-              <ul className="no-style service-list">
-                <li><span className="glyphicon glyphicon-menu-right"></span>Write and maintain modern, robust and testable computer programming</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Write and maintain unit, integration and acceptance tests for quality as
-                <li><span className="glyphicon glyphicon-menu-right"></span>Deliver sprint goals, refine stories and provide estimates</li>surance</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Provide Front and Back-end (API) design, development and maintenance</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Integrate or build custom and product digital solutions and services</li>
-              </ul>
-            </div>
-            <div className="col-sm-4">
-              <h3>I know</h3>
-              <ul className="no-style service-list">
-                <li><span className="glyphicon glyphicon-menu-right"></span>A range of open-source programming languages and frameworks</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Digital loyalty programs, campaigns and schemes</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Version control, release workflow and deployment strategies</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Social media and have domain knowledge for banking, automotive and pharmaceutical industries</li>
-                <li><span className="glyphicon glyphicon-menu-right"></span>Server maintenance, software and infrastructure as a service</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Services services={content.services} />
+      {/*<section id="services">*/}
+      {/*  <div className="container">*/}
+      {/*    <div className="row">*/}
+      {/*      <div className="col-lg-12 text-center">*/}
+      {/*        <h2>My services</h2>*/}
+      {/*        <hr className="code-primary" />*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*    <div className="row">*/}
+      {/*      <div className="col-sm-4">*/}
+      {/*        <h3>I am</h3>*/}
+      {/*        <ul className="no-style service-list">*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Used to working in an Agile Scrum or Kanban team</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Passionate about publishing and writing</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>A creative photoshop user with interests in art and design</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>A keen badminton and guitar player</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>The father of two children, whom I love dearly</li>*/}
+      {/*        </ul>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4">*/}
+      {/*        <h3>I can</h3>*/}
+      {/*        <ul className="no-style service-list">*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Write and maintain modern, robust and testable computer programming</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Write and maintain unit, integration and acceptance tests for quality as*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Deliver sprint goals, refine stories and provide estimates</li>surance</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Provide Front and Back-end (API) design, development and maintenance</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Integrate or build custom and product digital solutions and services</li>*/}
+      {/*        </ul>*/}
+      {/*      </div>*/}
+      {/*      <div className="col-sm-4">*/}
+      {/*        <h3>I know</h3>*/}
+      {/*        <ul className="no-style service-list">*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>A range of open-source programming languages and frameworks</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Digital loyalty programs, campaigns and schemes</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Version control, release workflow and deployment strategies</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Social media and have domain knowledge for banking, automotive and pharmaceutical industries</li>*/}
+      {/*          <li><span className="glyphicon glyphicon-menu-right"></span>Server maintenance, software and infrastructure as a service</li>*/}
+      {/*        </ul>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
 
       {/* About Section */}
       <section className="success" id="about">

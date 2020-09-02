@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import cx from 'classnames';
 import Container from 'react-bootstrap/Container';
 import Divider from './divider';
 import globalStyles from './global.module.css';
 import styles from './stack.module.css';
-import IllustratedList from "./illustratedList";
+import List from './list';
 
 function Stack(props) {
   const { primary, secondary } = props;
@@ -33,23 +34,23 @@ function Stack(props) {
         </div>
 
         <div className="row">
-          <div className="col-sm-1">
-            <ul className="no-style">
+          <div className={cx('col-sm-1', globalStyles.noStyle)}>
+            <ul>
               <li><img src="/img/php-57.png" alt="PHP version 5 and 7" /></li>
               <li><br /></li>
               <li><img src="/img/mysql.png" alt="MySQL" /></li>
             </ul>
           </div>
-          <IllustratedList listContent={primaryContent} />
+          <List listContent={primaryContent} />
 
-          <div className="col-sm-1">
-            <ul className="no-style">
+          <div className={cx('col-sm-1', globalStyles.noStyle)}>
+            <ul>
               <li><img src="/img/sf.png" alt="Symfony" /></li>
               <li><br /></li>
               <li><img src="/img/zf.png" alt="ZF" /></li>
             </ul>
           </div>
-          <IllustratedList listContent={secondaryContent} />
+          <List listContent={secondaryContent} />
         </div>
       </Container>
     </section>

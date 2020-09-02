@@ -5,6 +5,9 @@
     font-weight: 700;
     font-size: 2em;
 }
+.styledFont {
+    font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .appSection,
 .altAppSection {
     padding: 100px 0;
