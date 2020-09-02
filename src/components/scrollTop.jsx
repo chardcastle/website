@@ -34,15 +34,16 @@ class ScrollTop extends React.Component {
     const { isVisible } = this.props;
 
     return (
-      <>
+      <div className={styles.scroll} style={{ display: isVisible ? 'flex' : 'none' }}>
         <Button
-          className={styles.scroll}
-          style={{ display: isVisible ? 'flex' : 'none' }}
+          variant="secondary"
           onClick={() => { this.scrollToTop(); }}
+          size="sm"
+          href="#"
         >
-          <FaArrowCircleUp className="scrollTop" style={{ height: 40 }} />
+          <FaArrowCircleUp size="2em" />
         </Button>
-      </>
+      </div>
     );
   }
 }

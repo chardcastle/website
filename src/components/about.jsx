@@ -19,7 +19,7 @@ function About(props) {
           </Col>
         </Row>
         <Row>
-          <Col className="text-center">
+          <Col md={{ span: 8, offset: 2 }} className="text-center">
             <p>{content}</p>
           </Col>
         </Row>
