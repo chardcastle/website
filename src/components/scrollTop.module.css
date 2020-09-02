@@ -1,0 +1,15 @@
+.scroll {
+    opacity: 0.3;
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.scroll a:hover {
+     opacity: 1;
+ }

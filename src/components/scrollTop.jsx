@@ -1,4 +1,8 @@
-import React, { useState } from 'react';
+import { FaArrowCircleUp } from 'react-icons/fa';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+import styles from './scrollTop.module.css';
 
 class ScrollTop extends React.Component {
   constructor() {
@@ -10,29 +14,44 @@ class ScrollTop extends React.Component {
   }
 
   scrollStep() {
+    const { intervalId } = this.state;
+    const { scrollStepInPx } = this.props;
+
     if (window.pageYOffset === 0) {
-      clearInterval(this.state.intervalId);
+      clearInterval(intervalId);
     }
-    window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+
+    window.scroll(0, window.pageYOffset - scrollStepInPx);
   }
 
   scrollToTop() {
-    const intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+    const { delayInMs } = this.props;
+    const intervalId = setInterval(this.scrollStep.bind(this), delayInMs);
     this.setState({ intervalId });
   }
 
   render() {
     return (
-      <button
-        title="Back to top"
-        className="scroll"
-        onClick={() => { this.scrollToTop(); }}
-      >
-        <span className="arrow-up glyphicon glyphicon-chevron-up" />
-      </button>
+      <>
+      {/*<button*/}
+      {/*  title="Back to top"*/}
+      {/*  className="scroll"*/}
+      {/*  onClick={() => { this.scrollToTop(); }}*/}
+      {/*>*/}
+      {/*  <span className="arrow-up glyphicon glyphicon-chevron-up" />*/}
+      {/*</button>*/}
+      <Button className={styles.scroll} onClick={() => { this.scrollToTop(); }}>
+        <FaArrowCircleUp className="scrollTop" style={{ height: 40, display: 'flex' }} />
+      </Button>
+      </>
     );
   }
 }
+
+ScrollTop.propTypes = {
+  delayInMs: PropTypes.number.isRequired,
+  scrollStepInPx: PropTypes.number.isRequired,
+};
 
 export default ScrollTop;
 // import React, { useState } from 'react';
