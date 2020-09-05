@@ -2,15 +2,19 @@
     color: #fff;
     text-align: center;
     font-size: 8em;
+    margin-top: -0.3em;
 }
+
 @media (min-width: 768px) {
     .techIcon {
+        margin-top: 0;
         font-size: 6em;
     }
 }
 
 @media (min-width: 992px) {
     .techIcon {
+        margin-top: 0;
         font-size: 4em;
     }
 }

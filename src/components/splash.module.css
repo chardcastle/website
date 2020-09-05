@@ -2,7 +2,7 @@
     text-align: center;
     background: #16afb9;
     color: #fff;
-    padding: 30px 0 50px;
+    padding: 100px 0 50px;
 }
 @media (min-width: 768px) {
     .splash .container {
@@ -41,7 +41,6 @@
 .highLight {
     color: #f7ecb5;
 }
-
 
 .img-centered {
     margin: 0 auto;

@@ -3,19 +3,19 @@
     text-transform: uppercase;
     background: #2c3e50;
 }
-
-.title,
-.brandNavLink {
-    font-weight: 700;
-}
-.brandNavLink {
-    color: #fff;
+.navbarBrand {
     padding-left: 10px;
 }
-.brandNavLink:hover,
-.brandNavLink:focus,
-.appNav .active {
-    color: #16afb9;
-    background: #1a242f;
+.appNavLink {
+    font-weight: 700;
 }
 
+.appNavLink + .active {
+    background: red;
+}
+
+.appNavLink:hover,
+.appNavLink:focus,
+.appNavLink.active {
+    color: #16afb9!important;
+}
