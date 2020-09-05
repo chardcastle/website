@@ -4,11 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import crypto from 'crypto';
 import {
-  FaPhp, FaSymfony, FaNode, FaAws, FaBolt,
+  FaPhp, FaSymfony, FaNode, FaAws, FaBolt, FaWordpress, FaLinux,
 } from 'react-icons/fa';
 import { SiMysql, SiZendframework } from 'react-icons/si';
 import Divider from './divider';
 import globalStyles from './global.module.css';
+import styles from './stack.module.css';
 
 function Stack(props) {
   const { primary, secondary } = props;
@@ -22,17 +23,12 @@ function Stack(props) {
             <Divider type="line-default" />
           </Col>
         </Row>
-
         <Row>
-          <Col xs={2} md={4} className={globalStyles.noStyle}>
-            <ul>
-              <li><FaAws size="4em" /></li>
-              <li><SiMysql size="4em" /></li>
-              <li><FaPhp size="4em" /></li>
-            </ul>
-          </Col>
-
-          <Col xs={10} md={8} className={globalStyles.noStyle}>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaAws title="Amazon Web Services" /></Col>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><SiMysql title="Mysql" /></Col>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaPhp title="PHP" /></Col>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaNode title="Node.js" /></Col>
+          <Col xs={12} lg={8} className={globalStyles.noStyle}>
             <ul>
               {primary.map((line) => (
                 <li key={crypto.randomBytes(16).toString('hex')}>
@@ -42,16 +38,13 @@ function Stack(props) {
               ))}
             </ul>
           </Col>
-
-          <Col xs={2} md={4} className={globalStyles.noStyle}>
-            <ul>
-              <li><FaSymfony size="4em" /></li>
-              <li><SiZendframework size="4em" /></li>
-              <li><FaNode size="4em" /></li>
-            </ul>
-          </Col>
-
-          <Col xs={10} md={8} className={globalStyles.noStyle}>
+        </Row>
+        <Row>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaSymfony title="Symfony" /></Col>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><SiZendframework title="Zend PHP Framework" /></Col>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaWordpress title="Wordpress" /></Col>
+          <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaLinux title="Linux" /></Col>
+          <Col xs={12} lg={8} className={globalStyles.noStyle}>
             <ul>
               {secondary.map((line) => (
                 <li key={crypto.randomBytes(16).toString('hex')}>

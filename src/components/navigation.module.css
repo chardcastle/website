@@ -3,6 +3,19 @@
     text-transform: uppercase;
     background: #2c3e50;
 }
-.title {
+
+.title,
+.brandNavLink {
     font-weight: 700;
 }
+.brandNavLink {
+    color: #fff;
+    padding-left: 10px;
+}
+.brandNavLink:hover,
+.brandNavLink:focus,
+.appNav .active {
+    color: #16afb9;
+    background: #1a242f;
+}
+

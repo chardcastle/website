@@ -1,0 +1,16 @@
+.techIcon {
+    color: #fff;
+    text-align: center;
+    font-size: 8em;
+}
+@media (min-width: 768px) {
+    .techIcon {
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 992px) {
+    .techIcon {
+        font-size: 4em;
+    }
+}
