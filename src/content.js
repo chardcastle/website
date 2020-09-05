@@ -1,5 +1,4 @@
 import getConfig from 'next/config';
-import React from 'react';
 
 const { publicRuntimeConfig } = getConfig();
 
@@ -14,13 +13,18 @@ const appContent = {
   ogUrl: publicRuntimeConfig.siteUrl,
   ogImage: `${publicRuntimeConfig.siteUrl}/img/profile.png`,
   ogDescription: `${myTitle} is a senior software developer from the UK`,
+  titleAbout: 'About',
+  titleCvPDF: 'CV (PDF)',
+  titleExperience: 'Experience',
+  titleTechnologies: 'Technologies',
+  titleServices: 'Services',
   experiences: [
     {
       title: 'Third Bridge',
       slug: 'third-bridge',
       thumbnail: '/img/experience/thirdbridge.png',
       paragraphs: [
-        'As a software development engineer, this role was a trainsition to a more NodeJS orientated role.',
+        'As a software development engineer, this role was a transition to a more NodeJS orientated role.',
         'Using Microsystems as a means to defuse a legacy monolith.',
         'I supported the team in the design and construction of serverless (micro) services on the AWS platform.',
         'These (SNS/SQS) services replaced internal manual workflows and improved communications for one half of their business users.',
@@ -62,10 +66,16 @@ const appContent = {
       slug: 'splash-worldwide',
       thumbnail: '/img/experience/splash.png',
       paragraphs: [
-        'I\'ve undertaken a number of projects with Splash, these have all been excellent exercises for my technical development skills.',
-        'The first piece of work as built around a spreadsheet reader. A user could upload a file via the interface that I designed which was then processed in the API that I built. There was some work flow process built around the results that were presented shortly afterwards. I\'ve since learned that the tool is a large success, resulting in the saving of time and money.',
-        'Using my platform integration skills, I was able to connect an hybrid CRM and content system to a third party service that provides translations. There was a large and workflow process to which the solution needed to support. Due to the test driven nature of the project, many new features could be built to make the process more efficient.',
-        'Another recent project involved a similar integration, this was with a dynamic email composer. It was a mixture of PHP and NodeJS with an ExpressJS backend. I really enjoyed expanding a good piece of software and seeing it enclosed within the clients software when it was completed.',
+        'I\'ve undertaken a number of projects with Splash, these have all been excellent exercises for my technical development skills. '
+        + 'The first piece of work as built around a spreadsheet reader. A user could upload a file via the interface that I designed which '
+        + 'was then processed in the API that I built. There was some work flow process built around the results that were presented shortly afterwards. '
+        + 'I\'ve since learned that the tool is a large success, resulting in the saving of time and money. '
+        + 'Using my platform integration skills, I was able to connect an hybrid CRM and content system to a third party service that provides translations. '
+        + 'There was a large and workflow process to which the solution needed to support. '
+        + 'Due to the test driven nature of the project, many new features could be built to make the process more efficient. '
+        + 'Another recent project involved a similar integration, this was with a dynamic email composer. '
+        + 'It was a mixture of PHP and NodeJS with an ExpressJS backend. '
+        + 'I really enjoyed expanding a good piece of software and seeing it enclosed within the clients software when it was completed. ',
       ],
       lists: [
         {
@@ -102,9 +112,15 @@ const appContent = {
       slug: 'net-efficiency',
       thumbnail: '/img/experience/belron.png',
       paragraphs: [
-        'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. It’s the number one site for vehicle glass repair and replacements.',
-        'I styled the customer portal in which customers can manage their online appointments. I built the landing page in which customers specify the vehicle glass damage. I was instrumental in solving some design and functionality issues in this area and produced some of the graphics myself. My work was a graceful expansion around a complex and pre-existing Zend based solution.',
-        'I enjoyed working with the team and on my own as lead on another project providing content for closed UK Autoglass branch pages. I also mastered some GIT development cycle processes including deployment, branch management and became interested in automated testing and continuous integration.',
+        'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. '
+        + 'It’s the number one site for vehicle glass repair and replacements. '
+        + 'I styled the customer portal in which customers can manage their online appointments. '
+        + 'I built the landing page in which customers specify the vehicle glass damage. '
+        + 'I was instrumental in solving some design and functionality issues in this area and produced some of the graphics myself. '
+        + 'My work was a graceful expansion around a complex and pre-existing Zend based solution.'
+        + 'I enjoyed working with the team and on my own as lead on another project providing content for closed UK Autoglass branch pages. '
+        + 'I also mastered some GIT development cycle processes including deployment, '
+        + 'branch management and became interested in automated testing and continuous integration.',
       ],
       lists: [
         {
@@ -122,10 +138,15 @@ const appContent = {
       slug: 'general-optical-council',
       thumbnail: '/img/experience/goc.png',
       paragraphs: [
-        'I was the lead developer on an e-learning management platform for the General Optical Council. This included the design, development, testing and support of new features for around 20 thousand active users.',
-        'This also included a range of amends to existing features. The system covered all UK GOC registered opticians and helped the client determine who is inline with their legal obligations.',
-        'The project was written in YII, I add lots of extra functionality after it was launched in 2013, I led the system through annual reporting years, ad hoc development, user support enquiries,',
-        'a change in overnight syncronisation with a new Microsoft CRM system, documentation, design, reporting, database design and management. This was achieved with my PHP provided as custom classes and modules within the YII framework along with database deltas that managed changes.',
+        'I was the lead developer on an e-learning management platform for the General Optical Council. '
+        + 'This included the design, development, testing and support of new features for around 20 thousand active users. '
+        + 'This also included a range of amends to existing features. '
+        + 'The system covered all UK GOC registered opticians and helped the client determine who is inline with their legal obligations. '
+        + 'The project was written in YII, I added lots of extra functionality after it was launched in 2013. '
+        + 'I led the system through annual reporting years, ad hoc development and user support enquiries. '
+        + 'With documentation, design, reporting, database design and management included. '
+        + 'Included project to include a change in overnight synchronisation with a new Microsoft CRM system. '
+        + 'This was achieved with my PHP provided as custom classes and modules within the YII framework along with database deltas that managed changes. ',
       ],
       lists: [
         {
@@ -143,10 +164,21 @@ const appContent = {
       slug: 'emotive',
       thumbnail: '/img/experience/emotive.png',
       paragraphs: [
-        'There\'s a number of really interesting projects that I took with emotive:',
-        `${('Augmentin, dosage browser app:').bold()} Using BackboneJS and UnderscoreJS, I built a Javascript based iPhone app for a client that manufactured a drug called Augmentin. It included user interaction feature in the style and design of a bathroom scale. A slider could be used to display dosage data in real time. The work was wrapped up in Cordova for over the air installations on iPhone and Android devices. It was intended as promotional material for doctors in support of the brand. My skills with Backbone were instrumental in providing a manageable and flexible framework for all the JavaScript dependencies of this project.`,
-        `${('CMS / Budget impact model API and Reporting:').bold()} My skills and experience of SVG, Adobe and PHP allowed me to develop a mini infographic framework that could produce pixel perfect reports. I used PHP to populate SVG templates with data to manipulate the size and position of various chartable elements such as bar and pie charts. I worked closely with designers who supplied me with SVG from Adobe Illustrator to the desired technical specification, I was able to use these as templates to stage dynamic data to generate PDF files that could then be shared via email service that I built.`,
-        `${('Multistore:').bold()} I was the lead developer, the project was forked from OpenCart and was for a pharmaceutical company. It was used to populate a custom built eDetailer app on iPads. It was the web service that synchronised the product catalogue and received packages of information from the user. The user would be able to browse, select and then progress with a request as a shopper would on a site under a checkout model - similar that of an Ecommerce website. There was heavy customisation on this with lots of collaboration with content owners and the app developer. It was a very cathartic and enjoyable experience.`,
+        'There\'s a number of really interesting projects that I took with emotive:'
+        + 'Augmentin, dosage browser app: Using BackboneJS and UnderscoreJS, I built a Javascript based iPhone app for a client that manufactured a drug called Augmentin. '
+        + 'It included user interaction feature in the style and design of a bathroom scale. '
+        + 'A slider could be used to display dosage data in real time. '
+        + 'The work was wrapped up in Cordova for over the air installations on iPhone and Android devices. '
+        + 'It was intended as promotional material for doctors in support of the brand. My skills with Backbone were instrumental in providing a manageable and flexible framework for all the JavaScript dependencies of this project.'
+        + 'CMS / Budget impact model API and Reporting: My skills and experience of SVG, Adobe and PHP allowed me to develop a mini infographic framework that could produce pixel perfect reports. '
+        + 'I used PHP to populate SVG templates with data to manipulate the size and position of various chartable elements such as bar and pie charts. '
+        + 'I worked closely with designers who supplied me with SVG from Adobe Illustrator to the desired technical specification, I was able to use these as templates to stage dynamic data to generate PDF files that could then be shared via email service that I built.'
+        + 'Multistore: I was the lead developer, the project was forked from OpenCart and was for a pharmaceutical company. '
+        + 'It was used to populate a custom built eDetailer app on iPads. '
+        + 'It was the web service that synchronised the product catalogue and received packages of information from the user. '
+        + 'The user would be able to browse, select and then progress with a request as a shopper would on a site under a checkout model - similar that of an Ecommerce website. '
+        + 'There was heavy customisation on this with lots of collaboration with content owners and the app developer. '
+        + 'It was a very cathartic and enjoyable experience.',
       ],
       lists: [
         {
@@ -166,6 +198,7 @@ const appContent = {
   ],
   stack: {
     primary: [
+      'I now code mostly in node.js for AWS lambda\'s',
       'I enjoy using Laravel, Symfony PHP frameworks',
       'I know and use Zend, Yii and Wordpress',
       'I compile LESS or SASS for CSS and I write HTML with SEO in mind',
@@ -209,7 +242,7 @@ const appContent = {
     + 'with more than 10 years commercial expertise, providing both front and back-end '
     + 'development services for digital products on mobile, EPoS and desktop devices.',
   footer: {
-    signature: 'Chris Hardcastle 2020',
+    signature: `${myTitle} 2020`,
     location: 'London, UK',
   },
 };
