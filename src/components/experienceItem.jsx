@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'react-bootstrap/Modal';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import cx from 'classnames';
+import Modal from 'react-bootstrap/Modal';
 import styles from './experienceItem.module.css';
 
 function ExperienceItem(props) {
@@ -16,17 +16,15 @@ function ExperienceItem(props) {
   };
 
   return (
-    <>
-      <div className={cx('col-sm-4', styles.item)}>
-        <a href={`/${experience.slug}`} onClick={handleShow} className={styles.link}>
-          <div className={styles.caption}>
-            <div className={styles.content}>
-              <i className="fa fa-search-plus fa-3x" />
-            </div>
+    <Col sm={12} md={6} lg={4} className={styles.item}>
+      <a href={`/${experience.slug}`} onClick={handleShow} className={styles.link}>
+        <div className={styles.caption}>
+          <div className={styles.content}>
+            <i className="fa fa-search-plus fa-3x" />
           </div>
-          <img src={experience.thumbnail} className="img-responsive" alt="" />
-        </a>
-      </div>
+        </div>
+        <img src={experience.thumbnail} className="img-responsive" alt="" />
+      </a>
       <Modal
         show={show}
         onHide={handleClose}
@@ -56,7 +54,7 @@ function ExperienceItem(props) {
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </Col>
   );
 }
 

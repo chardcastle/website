@@ -18,3 +18,9 @@
         font-size: 4em;
     }
 }
+.statement {
+    padding: 1em 0;
+}
+.statementIcon {
+    padding-right: 1em;
+}

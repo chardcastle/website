@@ -47,8 +47,8 @@ function Stack(props) {
           <Col xs={12} lg={8} className={globalStyles.noStyle}>
             <ul>
               {secondary.map((line) => (
-                <li key={crypto.randomBytes(16).toString('hex')}>
-                  <FaBolt size="1em" />
+                <li key={crypto.randomBytes(16).toString('hex')} className={styles.statement}>
+                  <FaBolt size="1em" className={styles.statementIcon} />
                   {line}
                 </li>
               ))}

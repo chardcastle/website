@@ -1,7 +1,7 @@
 .navBarAppCustom {
     padding: 0;
 }
-.navBarAppCustom .navBarBrand {
+.navBarBrand {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -12,14 +12,14 @@
     margin: 1em;
 }
 
-.navBarAppCustom .appNavBarToggle:hover,
+.appNavBarToggle:hover,
 .activeLink {
     background: #1a242f;
 }
-.navBarAppCustom .appNavBarToggle,
-.navBarAppCustom .appNavBarToggle:hover,
-.navBarAppCustom .appNavBarToggle:focus,
-.navBarAppCustom .appNavBarToggle:active {
+.appNavBarToggle,
+.appNavBarToggle:hover,
+.appNavBarToggle:focus,
+.appNavBarToggle:active {
     border: none;
     outline-style: none;
 }
@@ -35,7 +35,7 @@
 .bg {
     background: #2c3e50;
 }
-.appSubNavBar .appSubNavBarInner .appNavLinkInner {
+.appNavLinkInner {
     padding: 0 1em;
 }
 

@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Divider from './divider';
 import ExperienceList from './experienceList';
 import styles from './global.module.css';
@@ -10,16 +12,16 @@ function Experience(props) {
   return (
     <section id="experience" className={styles.appSection}>
       <Container>
-        <div className="row">
-          <div className="col-lg-12 text-center">
+        <Row>
+          <Col className="text-center">
             <h2 className={`${styles.title} ${styles.styledFont}`}>Experience</h2>
             <Divider type="line-default" />
-          </div>
-        </div>
-        <div className="row">
+          </Col>
+        </Row>
+        <Row>
           {experiences
               && <ExperienceList experiences={experiences} />}
-        </div>
+        </Row>
       </Container>
     </section>
   );

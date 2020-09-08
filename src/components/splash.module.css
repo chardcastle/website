@@ -5,14 +5,10 @@
     padding: 100px 0 50px;
 }
 
-.splash .title{
+.title {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2em;
-}
-
-.splash .title {
     font-size: 2em;
 }
 
@@ -21,7 +17,7 @@
         padding-top: 200px;
         padding-bottom: 100px;
     }
-    .splash .title {
+    .title {
         font-size: 4em;
     }
     .splash .intro-text .skills {
