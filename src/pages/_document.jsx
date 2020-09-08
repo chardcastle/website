@@ -23,6 +23,8 @@ class MyDocument extends Document {
 
           <link rel="icon" href="/favicon.ico" />
 
+          <title>{content.appTitle}</title>
+
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content={content.appDescription} />
           <meta name="author" content={content.appAuthor} />
@@ -33,7 +35,6 @@ class MyDocument extends Document {
           <meta property="og:image" content={content.ogImage} />
           <meta property="og:description" content={content.ogDescription} />
 
-          <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
           <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
           <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         </Head>

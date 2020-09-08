@@ -1,21 +1,44 @@
-.bg {
-    font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    background: #2c3e50;
+.navBarAppCustom {
+    padding: 0;
 }
-.navbarBrand {
-    padding-left: 10px;
+.navBarAppCustom .navBarBrand {
+    color: #fff;
 }
-.appNavLink {
-    font-weight: 700;
+.navBarAppCustom .navBarBrand,
+.navBarAppCustom .appNavBarToggle {
+    margin: 1em;
 }
 
-.appNavLink + .active {
-    background: red;
+.navBarAppCustom .appNavBarToggle:hover,
+.activeLink {
+    background: #1a242f;
+}
+.navBarAppCustom .appNavBarToggle,
+.navBarAppCustom .appNavBarToggle:hover,
+.navBarAppCustom .appNavBarToggle:focus,
+.navBarAppCustom .appNavBarToggle:active {
+    border: none;
+    outline-style: none;
+}
+
+.appSubNavBar {
+    font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.bg {
+    background: #2c3e50;
+}
+.appSubNavBar .appSubNavBarInner .appNavLinkInner {
+    padding: 0 1em;
 }
 
 .appNavLink:hover,
 .appNavLink:focus,
 .appNavLink.active {
-    color: #16afb9!important;
+    color: #16afb9;
+    background: #2c3e50;
 }
