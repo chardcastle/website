@@ -3,6 +3,9 @@
 }
 .navBarAppCustom .navBarBrand {
     color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .navBarAppCustom .navBarBrand,
 .navBarAppCustom .appNavBarToggle {

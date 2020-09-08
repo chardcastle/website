@@ -14,7 +14,7 @@ function About(props) {
       <Container>
         <Row>
           <Col className="col-lg-12 text-center">
-            <h2 className={globalStyles.title}>About</h2>
+            <h2 className={`${globalStyles.title} ${globalStyles.styledFont}`}>About</h2>
             <Divider type="line-default" />
           </Col>
         </Row>

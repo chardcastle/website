@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import {
   Col, Row, Container, ListGroup,
 } from 'react-bootstrap';
-import cx from 'classnames';
 import {
   FaLinkedin, FaTwitter, FaGithub, FaSoundcloud,
 } from 'react-icons/fa';
@@ -13,15 +12,15 @@ function Footer(props) {
   const { content } = props;
 
   return (
-    <footer className={cx('text-center', styles.appFooter)}>
+    <footer className={`text-center ${styles.appFooter}`}>
       <Container className={styles.footerAbove} fluid>
         <Row>
           <Col>
-            <h3 className={globalStyles.title}>Location</h3>
+            <h3 className={`${globalStyles.footerTitle} ${globalStyles.styledFont}`}>Location</h3>
             <p>{content.location}</p>
           </Col>
           <Col className={globalStyles.noStyle}>
-            <h3 className={globalStyles.title}>Around the Web</h3>
+            <h3 className={`${globalStyles.footerTitle} ${globalStyles.styledFont}`}>Around the Web</h3>
             <Row>
               <ListGroup horizontal className={styles.listGroup}>
                 <ListGroup.Item className={styles.listGroupItem}>

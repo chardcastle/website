@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <Container>
       <Navbar className={cx(styles.navBarAppCustom, styles.bg)} collapseOnSelect fixed="top" expand="md" variant="dark">
-        <Navbar.Brand href="#home" className={cx(globalStyles.title, globalStyles.styledFont, styles.navBarBrand)}>
+        <Navbar.Brand href="#home" className={cx(globalStyles.styledFont, styles.navBarBrand)}>
           {content.appTitle}
         </Navbar.Brand>
         <Navbar.Toggle className={styles.appNavBarToggle} aria-controls="responsive-navbar-nav">

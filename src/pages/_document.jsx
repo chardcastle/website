@@ -38,7 +38,11 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet" type="text/css" />
           <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         </Head>
-        <body id="page-top" className={cx(bodyClass, 'index')}>
+        <body
+          id="page-top"
+          style={{ fontFamily: '"Lato","Helvetica Neue",Helvetica,Arial,sans-serif' }}
+          className={cx(bodyClass, 'index')}
+        >
           <Main />
           <NextScript />
         </body>

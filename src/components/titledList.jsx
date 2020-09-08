@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import cx from 'classnames';
 import Col from 'react-bootstrap/Col';
 import globalStyles from './global.module.css';
 import styles from './titledList.module.css';
@@ -9,8 +8,8 @@ function TitledList(props) {
   const { listItems, title, type } = props;
 
   return (
-    <Col className={cx(styles.titledList, globalStyles.noStyle)}>
-      <h3 className={cx(styles.title, globalStyles.styledFont)}>
+    <Col className={styles.titledList}>
+      <h3 className={`${styles.title} ${globalStyles.styledFont}`}>
         {title}
       </h3>
       <ul>

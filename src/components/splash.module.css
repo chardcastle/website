@@ -4,16 +4,28 @@
     color: #fff;
     padding: 100px 0 50px;
 }
+
+.splash .title{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.splash .title {
+    font-size: 2em;
+}
+
 @media (min-width: 768px) {
     .splash .container {
         padding-top: 200px;
         padding-bottom: 100px;
     }
-    .splash .intro-text .name {
-        font-size: 4.75em;
+    .splash .title {
+        font-size: 4em;
     }
     .splash .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 2em;
     }
 }
 
@@ -26,20 +38,14 @@
     margin: 0 auto 20px;
 }
 
-.splash .title,
 .splash .summary {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2em;
-}
-
-.splash .title {
-    font-size: 4.75em;
+    font-size: 1.25em;
+    font-weight: 300;
 }
 
 .highLight {
     color: #f7ecb5;
+    margin: 0 1em;
 }
 
 .img-centered {

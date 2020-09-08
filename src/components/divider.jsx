@@ -18,8 +18,6 @@ function Divider(props) {
             margin: 25px auto 30px;
         }
         .line-primary:after {
-            content: "\f121";
-            font-family: "FontAwesome", Arial, sans-serif;
             display: inline-block;
             position: relative;
             top: -0.8em;

@@ -1,9 +1,19 @@
-.title {
-    font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.title, .footerTitle {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    font-size: 2em;
+}
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.5em;
+    }
+}
+@media (min-width: 992px) {
+    .title {
+        font-size: 3.5em;
+    }
 }
 .styledFont {
     font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;

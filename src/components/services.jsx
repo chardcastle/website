@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Divider from './divider';
 import globalStyles from './global.module.css';
 import TitledList from './titledList';
-import constants from '../constants'
+import constants from '../constants';
 
 function Services(props) {
   const { services } = props;
@@ -12,7 +12,7 @@ function Services(props) {
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className={globalStyles.title}>My services</h2>
+            <h2 className={`${globalStyles.title} ${globalStyles.styledFont}`}>My services</h2>
             <Divider type="line-default" />
           </div>
         </div>

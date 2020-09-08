@@ -19,7 +19,7 @@ function Stack(props) {
       <Container>
         <Row>
           <Col className="text-center">
-            <h2 className={globalStyles.title}>Technologies</h2>
+            <h2 className={`${globalStyles.title} ${globalStyles.styledFont}`}>Technologies</h2>
             <Divider type="line-default" />
           </Col>
         </Row>
