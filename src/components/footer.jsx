@@ -3,7 +3,7 @@ import {
   Col, Row, Container, ListGroup,
 } from 'react-bootstrap';
 import {
-  FaLinkedin, FaTwitter, FaGithub, FaSoundcloud,
+  FaLinkedin, FaTwitter, FaGithub, FaSoundcloud, FaWordpress
 } from 'react-icons/fa';
 import globalStyles from './global.module.css';
 import styles from './footer.module.css';
@@ -51,7 +51,8 @@ function Footer(props) {
       <Container className={styles.footerBelow} fluid>
         <Row>
           <Col>
-            Copyright &#169;
+            {content.copyright}
+            &#169;
             {' '}
             { content.signature }
           </Col>

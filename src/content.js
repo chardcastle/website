@@ -243,6 +243,7 @@ const appContent = {
     + 'with more than 10 years commercial expertise, providing both front and back-end '
     + 'development services for digital products on mobile, EPoS and desktop devices.',
   footer: {
+    copyright: 'Copyright',
     signature: `${myTitle} 2020`,
     location: 'London, UK',
   },
