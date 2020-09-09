@@ -18,9 +18,10 @@
         font-size: 4em;
     }
 }
-.statement {
-    padding: 1em 0;
+.statements ul li {
+    padding: 0.5em 0;
+    list-style: none none;
 }
 .statementIcon {
-    padding-right: 1em;
+    margin-right: 0.5em;
 }

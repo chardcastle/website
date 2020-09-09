@@ -18,6 +18,10 @@ const appContent = {
   titleExperience: 'Experience',
   titleTechnologies: 'Technologies',
   titleServices: 'Services',
+  splashTitle: 'Software Engineer',
+  splashHeadlineOne: 'PHP / Node.js',
+  splashHeadlineTwo: 'API / Apps',
+  splashHeadlineThree: 'Amazon Web Services',
   experiences: [
     {
       title: 'Third Bridge',
@@ -200,11 +204,9 @@ const appContent = {
     primary: [
       'I now code mostly in node.js for AWS lambda\'s',
       'I enjoy using Laravel, Symfony PHP frameworks',
-      'I know and use Zend, Yii and Wordpress',
+      'I know and use, Next.js, Serverless, Zend, Yii and Wordpress',
       'I compile LESS or SASS for CSS and I write HTML with SEO in mind',
       'I use and build RESTful APIs suitable for AWS and GCP',
-      'I host static front end websites on Amazon S3',
-      'I use Composer and NPM for dependency management',
     ],
     secondary: [
       'I enjoy using Javascript to create web based single page applications',
@@ -212,16 +214,15 @@ const appContent = {
       'I use GIT on the terminal with GitHub and BitBucket accounts',
       'I use Docker containers for local development',
       'I Behat, Gerkin, PHPUnit for testing',
-      'I use virtual machines for browser testing',
     ],
   },
   services: {
     affirmations: [
       'Used to working in an Agile Scrum or Kanban team',
-      'Passionate about publishing and writing',
+      'Have experience of software development and release cycles',
       'A creative photoshop user with interests in art and design',
-      'A keen badminton and guitar player',
-      'The father of two children, whom I love dearly',
+      'An aspiring guitar player',
+      'A beer loving father and family man',
     ],
     abilities: [
       'Write and maintain modern, robust and testable computer programming',

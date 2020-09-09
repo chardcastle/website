@@ -31,6 +31,12 @@ export default function Navigation() {
   }
   return (
     <Container>
+      <style jsx>
+        {`
+          .navbar { padding: 0; }
+          .navbar-brand { padding-left: 1em; }
+        `}
+      </style>
       <Navbar className={`${styles.navBarAppCustom}, ${styles.bg}`} collapseOnSelect fixed="top" expand="md" variant="dark">
         <Navbar.Brand href="#home" className={`${globalStyles.styledFont} ${styles.navBarBrand}`}>
           {content.appTitle}

@@ -28,7 +28,7 @@ function Stack(props) {
           <Col xs={6} md={3} lg={1} className={styles.techIcon}><SiMysql title="Mysql" /></Col>
           <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaPhp title="PHP" /></Col>
           <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaNode title="Node.js" /></Col>
-          <Col xs={12} lg={8} className={globalStyles.noStyle}>
+          <Col xs={12} lg={8} className={styles.statements}>
             <ul>
               {primary.map((line) => (
                 <li key={crypto.randomBytes(16).toString('hex')}>
@@ -44,10 +44,10 @@ function Stack(props) {
           <Col xs={6} md={3} lg={1} className={styles.techIcon}><SiZendframework title="Zend PHP Framework" /></Col>
           <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaWordpress title="Wordpress" /></Col>
           <Col xs={6} md={3} lg={1} className={styles.techIcon}><FaLinux title="Linux" /></Col>
-          <Col xs={12} lg={8} className={globalStyles.noStyle}>
+          <Col xs={12} lg={8} className={styles.statements}>
             <ul>
               {secondary.map((line) => (
-                <li key={crypto.randomBytes(16).toString('hex')} className={styles.statement}>
+                <li key={crypto.randomBytes(16).toString('hex')}>
                   <FaBolt size="1em" className={styles.statementIcon} />
                   {line}
                 </li>

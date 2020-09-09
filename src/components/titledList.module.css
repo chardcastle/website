@@ -16,7 +16,7 @@
     margin: 0;
 }
 .titledList ul li {
-    padding: 1em 0;
+    padding: 0.5em 0;
     list-style: none none;
 }
 .titledListIcon {

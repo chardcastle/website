@@ -7,9 +7,9 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
-.navBarAppCustom .navBarBrand,
-.navBarAppCustom .appNavBarToggle {
-    margin: 1em;
+.navBarBrand,
+.appNavBarToggle {
+    margin: 1rem;
 }
 
 .appNavBarToggle:hover,

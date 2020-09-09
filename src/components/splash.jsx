@@ -2,25 +2,28 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { ImStarFull } from 'react-icons/im';
+import PropTypes from 'prop-types';
 import styles from './splash.module.css';
 import globalStyles from './global.module.css';
 import Divider from './divider';
 
-function Splash() {
+function Splash(props) {
+  const { content } = props;
+
   return (
     <header className={styles.splash}>
       <Container>
         <Row>
           <Col>
             <img className={styles.imgCentered} src="/img/profile.png?cache=2" alt="" />
-            <span className={`${styles.title}, ${globalStyles.styledFont}`}>Software Engineer</span>
+            <h1 className={`${styles.title} ${globalStyles.styledFont}`}>{content.splashTitle}</h1>
             <Divider type="line-primary" />
             <span className={styles.summary}>
-              PHP / Node.js
+              {content.splashHeadlineOne}
               <ImStarFull className={styles.highLight} />
-              API / Apps
+              {content.splashHeadlineTwo}
               <ImStarFull className={styles.highLight} />
-              Amazon web services
+              {content.splashHeadlineThree}
             </span>
           </Col>
         </Row>
@@ -28,5 +31,14 @@ function Splash() {
     </header>
   );
 }
+
+Splash.propTypes = {
+  content: PropTypes.shape({
+    splashTitle: PropTypes.string,
+    splashHeadlineOne: PropTypes.string,
+    splashHeadlineTwo: PropTypes.string,
+    splashHeadlineThree: PropTypes.string,
+  }),
+};
 
 export default Splash;
