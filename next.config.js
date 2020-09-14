@@ -13,11 +13,6 @@ module.exports = (phase, defaultConfig) => {
       // Will be available on both server and client
       staticFolder: '/static',
       siteUrl: 'http://chrishardcastle.co.uk',
-      visibleExperiences:
-        [
-          appConstants.EAGLE_EYE_SOLUTIONS,
-          appConstants.THIRD_BRIDGE,
-        ]
     },
   };
 

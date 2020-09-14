@@ -1,6 +1,3 @@
-.navBarAppCustom {
-    padding: 0;
-}
 .navBarBrand {
     color: #fff;
     text-transform: uppercase;
@@ -11,7 +8,6 @@
 .appNavBarToggle {
     margin: 1rem;
 }
-
 .appNavBarToggle:hover,
 .activeLink {
     background: #1a242f;
@@ -23,7 +19,6 @@
     border: none;
     outline-style: none;
 }
-
 .appSubNavBar {
     font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: block;
@@ -34,6 +29,7 @@
 }
 .bg {
     background: #2c3e50;
+    padding: 0;
 }
 .appNavLinkInner {
     padding: 0 1em;

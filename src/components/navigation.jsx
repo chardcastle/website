@@ -42,10 +42,10 @@ export default function Navigation() {
           {content.appTitle}
         </Navbar.Brand>
         <Navbar.Toggle className={styles.appNavBarToggle} aria-controls="responsive-navbar-nav">
-          <GiHamburgerMenu color="white" size="1.5em" />
+          <GiHamburgerMenu color="white" size="1em" className={styles.hamburger} />
         </Navbar.Toggle>
 
-        <Navbar.Collapse id="x" className={styles.appSubNavBar}>
+        <Navbar.Collapse id="x" variant="app" className={styles.appSubNavBar}>
           <Nav className="ml-auto">
             <Nav.Link
               onSelect={() => setSelectedLink(constants.NAV_ABOUT)}
