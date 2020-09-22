@@ -4,7 +4,9 @@
     color: #fff;
     padding: 100px 0 50px;
 }
-
+.show.splash {
+    padding: 500px 0 50px;
+}
 .title {
     display: block;
     text-transform: uppercase;

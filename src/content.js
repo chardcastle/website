@@ -28,10 +28,16 @@ const appContent = {
       slug: 'third-bridge',
       thumbnail: '/img/experience/thirdbridge.png',
       paragraphs: [
-        'As a software development engineer, this role was a transition to a more NodeJS orientated role.',
-        'Using Microsystems as a means to defuse a legacy monolith.',
-        'I supported the team in the design and construction of serverless (micro) services on the AWS platform.',
-        'These (SNS/SQS) services replaced internal manual workflows and improved communications for one half of their business users.',
+        'As a software development engineer, this role was a transition to a more Node.js orientated role. '
+        + 'I used Amazon\'s well architected framework pillars as a guide to creating micro-systems, as a means to defuse a legacy monolith. ',
+        'I supported the team in the design and construction of serverless services in Amazon Web Services. '
+        + 'These services replaced internal manual workflows and improved communications for one half of their business users. ',
+        'These users belonged to the commercial and finance domain of the company. '
+        + 'The projects included event driven solutions included usage of publish and subscribe models (AWS SNS/SQS).',
+        'I made further use of my experience with multilingual translations and locale handling. ',
+        'I provided test coverage, instructions and data sources to technical and non-technical colleagues in the business. '
+        + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest. ',
+        'I was quite active in the team and was part of a self established JavaScript community of practice. ',
       ],
       lists: [
         {
@@ -40,7 +46,7 @@ const appContent = {
         },
         {
           listTitle: 'Skills / software:',
-          listValues: 'AWS, Lambda, JavaScript, Node.js, Terraform, CircleCI',
+          listValues: 'Serverless, AWS, Lambda, JavaScript, Node.js, Terraform, CircleCI',
         },
       ],
     },
@@ -49,10 +55,13 @@ const appContent = {
       slug: 'eagle-eye-solutions',
       thumbnail: '/img/experience/eagleeye.png',
       paragraphs: [
-        'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. These were MVP’s, custom and product features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
-        'Leading the team to design, build and deliver a legacy XML based EPoS API within the AIR platform, assisting and supporting the migration of new and existing well known high street retailers to this service. Expanding the solution to include EES digital wallet products and consumer search for JDSports.',
-        'Writing console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. Other scripts I wrote searched for and reported on financial transactions, campaign activity and consumer data.',
-        'Innovation with technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.',
+        'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. ',
+        'I worked on features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
+        'Leading the team to design, build and deliver a legacy XML based EPoS API within the AIR platform, assisting and supporting the migration of new and existing well known high street retailers to this service. '
+        + 'I then expanded the solution to include EES digital wallet products and consumer search for JDSports. ',
+        'Writing console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. '
+        + 'Other scripts I wrote searched for and reported on financial transactions, campaign activity and consumer data.',
+        'I was exploring event based technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.',
       ],
       lists: [
         {
@@ -70,15 +79,17 @@ const appContent = {
       slug: 'splash-worldwide',
       thumbnail: '/img/experience/splash.png',
       paragraphs: [
-        'I\'ve undertaken a number of projects with Splash, these have all been excellent exercises for my technical development skills. '
-        + 'The first piece of work as built around a spreadsheet reader. A user could upload a file via the interface that I designed which '
-        + 'was then processed in the API that I built. There was some work flow process built around the results that were presented shortly afterwards. '
-        + 'I\'ve since learned that the tool is a large success, resulting in the saving of time and money. '
-        + 'Using my platform integration skills, I was able to connect an hybrid CRM and content system to a third party service that provides translations. '
+        'I did a couple of pieces for Splash under contract. '
+        + 'The first piece of work as built around a spreadsheet reader. '
+        + 'A user could upload a file via the interface that I designed, which was then processed in the API that I built. '
+        + 'Some work flow process were built to receive the results of the ingestion. '
+        + 'A couple of years later I had some feedback to say that it was still being used to the save them time and money.',
+        'Secondly, using my platform integration skills, I was able to connect an hybrid CRM and content system to a third party service. '
+        + 'The service translated content for non-English readers. '
         + 'There was a large and workflow process to which the solution needed to support. '
         + 'Due to the test driven nature of the project, many new features could be built to make the process more efficient. '
         + 'Another recent project involved a similar integration, this was with a dynamic email composer. '
-        + 'It was a mixture of PHP and NodeJS with an ExpressJS backend. '
+        + 'It was a mixture of PHP and Node.js with an ExpressJS backend. '
         + 'I really enjoyed expanding a good piece of software and seeing it enclosed within the clients software when it was completed. ',
       ],
       lists: [
@@ -121,7 +132,6 @@ const appContent = {
         + 'I styled the customer portal in which customers can manage their online appointments. '
         + 'I built the landing page in which customers specify the vehicle glass damage. '
         + 'I was instrumental in solving some design and functionality issues in this area and produced some of the graphics myself. '
-        + 'My work was a graceful expansion around a complex and pre-existing Zend based solution.'
         + 'I enjoyed working with the team and on my own as lead on another project providing content for closed UK Autoglass branch pages. '
         + 'I also mastered some GIT development cycle processes including deployment, '
         + 'branch management and became interested in automated testing and continuous integration.',
