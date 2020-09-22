@@ -10,6 +10,7 @@
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2em;
+    letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {
@@ -18,7 +19,7 @@
         padding-bottom: 100px;
     }
     .title {
-        font-size: 2.5em;
+        font-size: 3em;
     }
     .splash .intro-text .skills {
         font-size: 2em;
