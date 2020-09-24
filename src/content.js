@@ -31,10 +31,11 @@ const appContent = {
         'As a software development engineer, this role was a transition to a more Node.js orientated role. '
         + 'I used Amazon\'s well architected framework pillars as a guide to creating micro-systems, as a means to defuse a legacy monolith. ',
         'I supported the team in the design and construction of serverless services in Amazon Web Services. '
-        + 'These services replaced internal manual workflows and improved communications for one half of their business users. ',
-        'These users belonged to the commercial and finance domain of the company. '
-        + 'The projects included event driven solutions included usage of publish and subscribe models (AWS SNS/SQS).',
-        'I made further use of my experience with multilingual translations and locale handling. ',
+        + 'These services replaced internal manual workflows and improved communications for one half of their business users. '
+        + 'The technical solutions included event driven features which published and consumed event messages (AWS SNS/SQS). '
+        + 'They were built and deployed in an automated CI/CD environment. '
+        + 'The users of these services belonged to the commercial and finance domain of the company.',
+        'I made further use of my experience with multilingual translations and locale handling.',
         'I provided test coverage, instructions and data sources to technical and non-technical colleagues in the business. '
         + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest. ',
         'I was quite active in the team and was part of a self established JavaScript community of practice. ',
@@ -46,7 +47,7 @@ const appContent = {
         },
         {
           listTitle: 'Skills / software:',
-          listValues: 'Serverless, AWS, Lambda, JavaScript, Node.js, Terraform, CircleCI',
+          listValues: 'Node.js, Serverless, AWS, Lambda, JavaScript, Jest, POEdit, Terraform, CircleCI, Jenkins',
         },
       ],
     },
@@ -212,18 +213,18 @@ const appContent = {
   ],
   stack: {
     primary: [
-      'I now code mostly in node.js for AWS lambda\'s',
-      'I enjoy using Laravel, Symfony PHP frameworks',
-      'I know and use, Next.js, Serverless, Zend, Yii and Wordpress',
-      'I compile LESS or SASS for CSS and I write HTML with SEO in mind',
-      'I use and build RESTful APIs suitable for AWS and GCP',
+      'I like to use Node.js in AWS lambda functions',
+      'I can use Laravel, Symfony and other PHP frameworks',
+      'I use database solutions such as MySQL, RDS and Redis',
+      'I use and build RESTful APIs',
+      'I compile CSS with modern preprocessors',
     ],
     secondary: [
-      'I enjoy using Javascript to create web based single page applications',
-      'I use Browserify or Webpack alongside modern task runners',
-      'I use GIT on the terminal with GitHub and BitBucket accounts',
-      'I use Docker containers for local development',
-      'I Behat, Gerkin, PHPUnit for testing',
+      'I like to web based single page applications (Apps)',
+      'I use or create graphics using editors such as photoshop',
+      'I use the terminal for git, AWS orchestration, CI/CD and server admin',
+      'I use Docker containers and unit tests for local development',
+      'I express requirements in Gerkin and test against them using Behat',
     ],
   },
   services: {
