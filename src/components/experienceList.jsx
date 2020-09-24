@@ -5,7 +5,7 @@ function ExperienceList(props) {
   const { experiences } = props;
 
   const experienceThumbs = experiences
-    .map((experience) => <ExperienceItem experience={experience} />);
+    .map((experience) => <ExperienceItem key={experience.slug} experience={experience} />);
 
   return (
     <>

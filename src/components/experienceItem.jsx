@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import crypto from 'crypto';
 import styles from './experienceItem.module.css';
 
 function ExperienceItem(props) {
@@ -27,6 +28,7 @@ function ExperienceItem(props) {
       </a>
       <Modal
         show={show}
+        size="lg"
         onHide={handleClose}
         dialogClassName={styles.experienceDescription}
         animation={false}
@@ -36,15 +38,20 @@ function ExperienceItem(props) {
         </Modal.Header>
         <Modal.Body>
           {experience.paragraphs && experience.paragraphs.map((paragraph) => (
-            <p>{paragraph}</p>
+            <p key={crypto.randomBytes(16).toString('hex')}>{paragraph}</p>
           ))}
           <br />
-          {experience.lists && experience.lists.map((list) => (
-            <ul>
-              <li><strong>{list.listTitle}</strong></li>
-              <li>{list.listValues}</li>
-            </ul>
-          ))}
+          {experience.lists && (
+          <ul>
+            {experience.lists.map((list) => (
+              <li key={crypto.randomBytes(16).toString('hex')}>
+                <strong>{list.listTitle}</strong>
+                <br />
+                {list.listValues}
+              </li>
+            ))}
+          </ul>
+          )}
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
