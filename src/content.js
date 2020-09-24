@@ -37,8 +37,8 @@ const appContent = {
         + 'The users of these services belonged to the commercial and finance domain of the company.',
         'I made further use of my experience with multilingual translations and locale handling.',
         'I provided test coverage, instructions and data sources to technical and non-technical colleagues in the business. '
-        + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest. ',
-        'I was quite active in the team and was part of a self established JavaScript community of practice. ',
+        + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest.',
+        'Beyond the team, I helped establish a JavaScript community of practice, with other developers in the business.',
       ],
       lists: [
         {
@@ -58,8 +58,9 @@ const appContent = {
       paragraphs: [
         'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. ',
         'I worked on features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
-        'Leading the team to design, build and deliver a legacy XML based EPoS API within the AIR platform, assisting and supporting the migration of new and existing well known high street retailers to this service. '
-        + 'I then expanded the solution to include EES digital wallet products and consumer search for JDSports. ',
+        'I led the design, build and delivery of an legacy XML based EPoS API within their AIR platform, assisting '
+        + 'and supporting the migration of new and existing well known high street retailers to this service. '
+        + 'I then expanded the solution to include EES digital wallet products and consumer search for JDSports.',
         'Writing console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. '
         + 'Other scripts I wrote searched for and reported on financial transactions, campaign activity and consumer data.',
         'I was exploring event based technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.',
