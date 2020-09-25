@@ -27,10 +27,9 @@ function Experience(props) {
   );
 }
 
+const experienceProp = PropTypes.shape({ title: PropTypes.string });
 Experience.propTypes = {
-  experiences: PropTypes.shape([
-    PropTypes.shape({ title: PropTypes.string }),
-  ]).isRequired,
+  experiences: PropTypes.arrayOf(experienceProp).isRequired,
 };
 
 export default Experience;
