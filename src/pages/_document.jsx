@@ -2,7 +2,6 @@ import React from 'react';
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
-import cx from 'classnames';
 import content from '../content';
 
 class MyDocument extends Document {
@@ -13,8 +12,6 @@ class MyDocument extends Document {
   }
 
   render() {
-    const { bodyClass } = this.props;
-
     return (
       <Html>
         <Head>
@@ -41,7 +38,7 @@ class MyDocument extends Document {
         <body
           id="page-top"
           style={{ fontFamily: '"Lato","Helvetica Neue",Helvetica,Arial,sans-serif' }}
-          className={cx(bodyClass, 'index')}
+          className="index"
         >
           <Main />
           <NextScript />
