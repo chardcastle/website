@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import crypto from 'crypto';
 import styles from './experienceItem.module.css';
+import globalStyles from './global.module.css';
 
 function ExperienceItem(props) {
   const { experience } = props;
@@ -34,7 +35,11 @@ function ExperienceItem(props) {
         animation={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>{experience.title}</Modal.Title>
+          <Modal.Title>
+            <div className={`${globalStyles.title} ${globalStyles.styledFont} ${styles.title}`}>
+              {experience.title}
+            </div>
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {experience.paragraphs && experience.paragraphs.map((paragraph) => (

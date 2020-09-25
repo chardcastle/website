@@ -9,7 +9,7 @@ function TitledList(props) {
   const { listItems, title, type } = props;
 
   return (
-    <Col className={styles.titledList}>
+    <Col className={styles.titledList} sm={12} md={4}>
       <h3 className={`${styles.title} ${globalStyles.styledFont}`}>
         {title}
       </h3>

@@ -5,6 +5,9 @@
     letter-spacing: 1px;
     font-size: 2em;
 }
+.footerTitle {
+    font-size: 1.5em;
+}
 .styledFont {
     font-family: Play, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

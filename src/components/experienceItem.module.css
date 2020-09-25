@@ -1,7 +1,10 @@
 #experience * {
     z-index: 2;
 }
-
+.title {
+    font-size: 1em;
+    letter-spacing: 0;
+}
 .item {
     margin: 0 0 15px;
     right: 0;
@@ -60,7 +63,7 @@
 .experienceDescription ul li {
     list-style-type: none;
     list-style-image: none;
-    padding: 0;
+    padding: 0.5em 0;
 }
 .link img {
     display: block;

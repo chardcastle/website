@@ -1,8 +1,10 @@
 import getConfig from 'next/config';
+import { ucFirst } from './stringUtility';
 
 const { publicRuntimeConfig } = getConfig();
 
 const myTitle = 'Chris Hardcastle';
+const stackSplitStatement = 'split 70% to 30% in favour of the server-side';
 
 const appContent = {
   appTitle: myTitle,
@@ -39,6 +41,8 @@ const appContent = {
         'I provided test coverage, instructions and data sources to technical and non-technical colleagues in the business. '
         + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest.',
         'Beyond the team, I helped establish a JavaScript community of practice, with other developers in the business.',
+        'I also held a voluntary role as a security champion. The aims of this team was to nurture a security culture in the business. '
+        + 'This was a great exercise and exploration of the OWASP top 10 security threats.',
       ],
       lists: [
         {
@@ -119,7 +123,7 @@ const appContent = {
           listValues: 'January 2016 to August 2016 (contract)',
         },
         {
-          listTitle: 'Skills / software',
+          listTitle: 'Skills / software:',
           listValues: 'ReactJS, Flux, AWS, BackboneJS, RequireJS, UnderscoreJS, GIT, Scrum, Vagrant, Symfony 2, PHPUnit, Mocha, Selenium',
         },
       ],
@@ -129,12 +133,12 @@ const appContent = {
       slug: 'net-efficiency',
       thumbnail: '/img/experience/belron.png',
       paragraphs: [
-        'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. '
-        + 'It’s the number one site for vehicle glass repair and replacements. '
+        'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. ',
+        'Autoglass is the number one site for vehicle glass repair and replacements. '
         + 'I styled the customer portal in which customers can manage their online appointments. '
         + 'I built the landing page in which customers specify the vehicle glass damage. '
-        + 'I was instrumental in solving some design and functionality issues in this area and produced some of the graphics myself. '
-        + 'I enjoyed working with the team and on my own as lead on another project providing content for closed UK Autoglass branch pages. '
+        + 'I was instrumental in solving some design and functionality issues in this area and produced some of the graphics myself. ',
+        'I enjoyed working with the team and on my own as lead on another project providing content for closed UK Autoglass branch pages. '
         + 'I also mastered some GIT development cycle processes including deployment, '
         + 'branch management and became interested in automated testing and continuous integration.',
       ],
@@ -144,7 +148,7 @@ const appContent = {
           listValues: 'March 2015 - December 2015 (contract)',
         },
         {
-          listTitle: 'Skills / software',
+          listTitle: 'Skills / software:',
           listValues: 'PHP 5, Zend version 1 and 2, Composer, MySQL, GIT, HTML, CSS, jQuery',
         },
       ],
@@ -170,7 +174,7 @@ const appContent = {
           listValues: 'June 2013 – February 2015 (1 year 9 months)',
         },
         {
-          listTitle: 'Skills / software',
+          listTitle: 'Skills / software:',
           listValues: 'YII (PHP), MySQL, SVN',
         },
       ],
@@ -230,11 +234,11 @@ const appContent = {
   },
   services: {
     affirmations: [
-      'Used to working in an Agile Scrum or Kanban team',
-      'Have experience of software development and release cycles',
+      `${ucFirst(stackSplitStatement)}`,
+      'Used to working in a Agile Scrum or Kanban team',
+      'Experienced in software development and release cycles',
       'A creative photoshop user with interests in art and design',
-      'An aspiring guitar player',
-      'A beer loving father and family man',
+      'A beer loving musician, father and family man',
     ],
     abilities: [
       'Write and maintain modern, robust and testable computer programming',
@@ -252,10 +256,12 @@ const appContent = {
     ],
   },
   about: {
-    firstParagraph: 'I\'m a highly experienced, agile and knowledgeable software development engineer, '
-    + 'with more than 10 years commercial expertise, providing both front and back-end '
-    + 'development services for digital products on mobile, EPoS and desktop devices.',
-    secondParagraph: 'I built this site in Next.js (React JavaScript), any feedback is welcome. Thanks for reading about my work.',
+    firstParagraph: 'In terms of "full stack" (both front/back-end or UX/server-side) development. '
+    + `I'd say, by ability, I'm between ${stackSplitStatement}. `
+    + 'I\'m presently expanding my knowledge to serverless, terraform and CircleCI as means to provide another facet to my stack.',
+    secondParagraph: 'I come from Yorkshire originally where I studied in graphic, media communications (BA Hons). '
+    + 'I\'m really interested in mind models and Physiology. Beyond coding, my passion is family, yoga and playing the guitar. '
+    + 'I built this site in Next.js (React JavaScript), any feedback is welcome. Thanks for reading.',
   },
   footer: {
     copyright: 'Copyright ',
