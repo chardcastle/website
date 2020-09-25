@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+// Ignoring error regarding window variable which is only available in the browser
 import { useEffect, useState } from 'react';
 
 function useWindowScrolled() {
