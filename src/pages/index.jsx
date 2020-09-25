@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from '../components/navigation';
 import Splash from '../components/splash';
 import Experience from '../components/experience';
@@ -11,11 +11,13 @@ import useWindowScrolled from '../hooks/useWindowScrolled';
 import Footer from '../components/footer';
 
 export default function Home() {
+  const [navOpen, setNavOpen] = useState(false);
+  const toggleNavOpen = () => { setNavOpen(!navOpen); }
   return (
     <>
-      <Navigation content={content} />
+      <Navigation content={content} onOpen={toggleNavOpen} />
 
-      <Splash content={content} />
+      <Splash content={content} isNavOpen={navOpen} />
 
       <Experience experiences={content.experiences} />
 
@@ -25,7 +27,7 @@ export default function Home() {
 
       <About content={content.about} />
 
-      <ScrollTop scrollStepInPx="50" delayInMs="16.66" isVisible={useWindowScrolled()} />
+      <ScrollTop scrollStepInPx={50} delayInMs={16.66} isVisible={useWindowScrolled()} />
 
       <Footer content={content.footer} />
     </>

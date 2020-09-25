@@ -8,13 +8,14 @@ import globalStyles from './global.module.css';
 import Divider from './divider';
 
 function Splash(props) {
-  const { content } = props;
+  const { content, isNavOpen } = props;
+  const columnClassName = isNavOpen ? styles.adaptsToNavOpen : '';
 
   return (
     <header className={styles.splash}>
       <Container>
         <Row>
-          <Col>
+          <Col className={columnClassName}>
             <img className={styles.imgCentered} src="/img/profile.png?cache=2" alt="" />
             <h1 className={`${styles.title} ${globalStyles.styledFont}`}>{content.splashTitle}</h1>
             <Divider type="line-primary" />
@@ -33,12 +34,13 @@ function Splash(props) {
 }
 
 Splash.propTypes = {
+  isNavOpen: PropTypes.bool.isRequired,
   content: PropTypes.shape({
     splashTitle: PropTypes.string,
     splashHeadlineOne: PropTypes.string,
     splashHeadlineTwo: PropTypes.string,
     splashHeadlineThree: PropTypes.string,
-  }),
+  }).isRequired,
 };
 
 export default Splash;

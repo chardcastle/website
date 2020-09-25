@@ -2,13 +2,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './navigation.module.css';
 import globalStyles from './global.module.css';
 import content from '../content';
 import constants from '../constants';
 
-export default function Navigation() {
+function Navigation(props) {
   const [selectedLink, setSelectedLink] = useState('');
   let {
     aboutSelected, experienceSelected, techSelected, servicesSelected,
@@ -29,6 +30,9 @@ export default function Navigation() {
   if (selectedLink === constants.NAV_TECHNOLOGIES) {
     techSelected = styles.activeLink;
   }
+
+  const { onOpen } = props;
+
   return (
     <Container>
       <style jsx>
@@ -37,12 +41,12 @@ export default function Navigation() {
           .navbar-brand { padding-left: 1em; }
         `}
       </style>
-      <Navbar className={`${styles.navBarAppCustom}, ${styles.bg}`} collapseOnSelect fixed="top" expand="md" variant="dark">
+      <Navbar className={styles.bg} collapseOnSelect fixed="top" expand="md" variant="dark">
         <Navbar.Brand href="#home" className={`${globalStyles.styledFont} ${styles.navBarBrand}`}>
           {content.appTitle}
         </Navbar.Brand>
-        <Navbar.Toggle className={styles.appNavBarToggle} aria-controls="responsive-navbar-nav">
-          <GiHamburgerMenu color="white" size="1em" className={styles.hamburger} />
+        <Navbar.Toggle className={styles.appNavBarToggle} onClick={onOpen} aria-controls="responsive-navbar-nav">
+          <GiHamburgerMenu color="white" size="1em" />
         </Navbar.Toggle>
 
         <Navbar.Collapse id="x" variant="app" className={styles.appSubNavBar}>
@@ -84,3 +88,9 @@ export default function Navigation() {
     </Container>
   );
 }
+
+Navigation.propTypes = {
+  onOpen: PropTypes.func.isRequired,
+};
+
+export default Navigation;
