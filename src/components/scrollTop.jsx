@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+// Window object is undefined in code but is available via useEffect() which runs in browser only
 import { FaArrowCircleUp } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -17,7 +19,7 @@ class ScrollTop extends React.Component {
     const { intervalId } = this.state;
     const { scrollStepInPx } = this.props;
 
-    if (window.pageYOffset === 0) {
+    if (typeof window !== 'undefined' && window.pageYOffset === 0) {
       clearInterval(intervalId);
     }
 
@@ -51,7 +53,7 @@ class ScrollTop extends React.Component {
 ScrollTop.propTypes = {
   delayInMs: PropTypes.number.isRequired,
   scrollStepInPx: PropTypes.number.isRequired,
-  isVisible: PropTypes.func.isRequired,
+  isVisible: PropTypes.bool.isRequired,
 };
 
 export default ScrollTop;
