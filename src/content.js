@@ -247,16 +247,19 @@ const appContent = {
       'A range of open-source programming languages and frameworks',
       'Digital loyalty programs, campaigns and schemes',
       'Version control, release workflow and deployment strategies',
-      'Social media and have domain knowledge for banking, automotive and pharmaceutical industries',
+      'Domain knowledge for finance, social media, automotive and pharmaceutical industries',
       'Server maintenance, software and infrastructure as a service',
     ],
   },
-  about: 'I\'m a highly experienced, agile and knowledgeable senior software engineer,'
+  about: {
+    firstParagraph: 'I\'m a highly experienced, agile and knowledgeable software development engineer, '
     + 'with more than 10 years commercial expertise, providing both front and back-end '
     + 'development services for digital products on mobile, EPoS and desktop devices.',
+    secondParagraph: 'I built this site in Next.js (React JavaScript), any feedback is welcome. Thanks for reading about my work.',
+  },
   footer: {
-    copyright: 'Copyright',
-    signature: `${myTitle} 2020`,
+    copyright: 'Copyright ',
+    signature: `${myTitle} ${(new Date()).getFullYear()}`,
     location: 'London, UK',
   },
 };

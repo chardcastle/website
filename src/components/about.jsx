@@ -20,7 +20,10 @@ function About(props) {
         </Row>
         <Row>
           <Col md={{ span: 8, offset: 2 }} className="text-center">
-            <p>{content}</p>
+            <p>{content.firstParagraph}</p>
+          </Col>
+          <Col md={{ span: 8, offset: 2 }} className="text-center">
+            <p>{content.secondParagraph}</p>
           </Col>
         </Row>
         <Row>
@@ -33,7 +36,7 @@ function About(props) {
             <br />
             <Button href="/cv/chris-hardcastle-cv.docx" target="_blank" variant="secondary" size="sm">
               <i className="fa fa-file-word-o" />
-              &nbsp;Download CV (Word)
+              &nbsp;Download CV (Word doc)
             </Button>
           </Col>
         </Row>
@@ -43,7 +46,10 @@ function About(props) {
 }
 
 About.propTypes = {
-  content: PropTypes.string.isRequired,
+  content: PropTypes.shape({
+    firstParagraph: PropTypes.string.isRequired,
+    secondParagraph: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default About;
