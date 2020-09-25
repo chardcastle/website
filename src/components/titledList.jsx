@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Col from 'react-bootstrap/Col';
+import crypto from 'crypto';
 import globalStyles from './global.module.css';
 import styles from './titledList.module.css';
 import TitledListItem from './titledListItem';
@@ -13,7 +14,13 @@ function TitledList(props) {
         {title}
       </h3>
       <ul>
-        {listItems.map((line) => <TitledListItem type={type} line={line} />)}
+        {listItems.map((line) => (
+          <TitledListItem
+            key={crypto.randomBytes(16).toString('hex')}
+            type={type}
+            line={line}
+          />
+        ))}
       </ul>
     </Col>
   );

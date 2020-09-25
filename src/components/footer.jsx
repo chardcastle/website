@@ -3,7 +3,7 @@ import {
   Col, Row, Container, ListGroup,
 } from 'react-bootstrap';
 import {
-  FaLinkedin, FaTwitter, FaGithub, FaSoundcloud, FaWordpress
+  FaLinkedin, FaTwitter, FaGithub, FaSoundcloud,
 } from 'react-icons/fa';
 import globalStyles from './global.module.css';
 import styles from './footer.module.css';
@@ -63,7 +63,11 @@ function Footer(props) {
 }
 
 Footer.propTypes = {
-  content: PropTypes.string.isRequired,
+  content: PropTypes.shape({
+    copyright: PropTypes.string.isRequired,
+    signature: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Footer;
