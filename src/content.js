@@ -27,6 +27,7 @@ const appContent = {
   experiences: [
     {
       title: 'Third Bridge',
+      isVisible: true,
       slug: 'third-bridge',
       thumbnail: '/img/experience/thirdbridge.png',
       paragraphs: [
@@ -35,13 +36,13 @@ const appContent = {
         'I supported the team in the design and construction of serverless services in Amazon Web Services. '
         + 'These services replaced internal manual workflows and improved communications for one half of their business users. '
         + 'The technical solutions included event driven features which published and consumed event messages (AWS SNS/SQS). '
-        + 'They were built and deployed in an automated CI/CD environment. '
-        + 'The users of these services belonged to the commercial and finance domain of the company.',
+        + 'They were built to lint in ECMAScript 5 or 6 and deployed in an automated CI/CD environment. '
+        + 'The users of these services belonged to the commercial and finance domain of the company. ',
         'I made further use of my experience with multilingual translations and locale handling.',
         'I provided test coverage, instructions and data sources to technical and non-technical colleagues in the business. '
         + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest.',
         'Beyond the team, I helped establish a JavaScript community of practice, with other developers in the business.',
-        'I also held a voluntary role as a security champion. The aims of this team was to nurture a security culture in the business. '
+        'I also held a voluntary role as a "security champion" in a team aiming to nurture the security culture of the business. '
         + 'This was a great exercise and exploration of the OWASP top 10 security threats.',
       ],
       lists: [
@@ -57,6 +58,7 @@ const appContent = {
     },
     {
       title: 'Eagle Eye Solutions',
+      isVisible: true,
       slug: 'eagle-eye-solutions',
       thumbnail: '/img/experience/eagleeye.png',
       paragraphs: [
@@ -82,6 +84,7 @@ const appContent = {
     },
     {
       title: 'Splash Worldwide',
+      isVisible: true,
       slug: 'splash-worldwide',
       thumbnail: '/img/experience/splash.png',
       paragraphs: [
@@ -111,6 +114,7 @@ const appContent = {
     },
     {
       title: 'BAFTA',
+      isVisible: false,
       slug: 'bafta',
       thumbnail: '/img/experience/bafta.png',
       paragraphs: [
@@ -130,6 +134,7 @@ const appContent = {
     },
     {
       title: 'Net Efficiency',
+      isVisible: true,
       slug: 'net-efficiency',
       thumbnail: '/img/experience/belron.png',
       paragraphs: [
@@ -155,18 +160,19 @@ const appContent = {
     },
     {
       title: 'General Optical Council',
+      isVisible: true,
       slug: 'general-optical-council',
       thumbnail: '/img/experience/goc.png',
       paragraphs: [
-        'I was the lead developer on an e-learning management platform for the General Optical Council. '
-        + 'This included the design, development, testing and support of new features for around 20 thousand active users. '
-        + 'This also included a range of amends to existing features. '
-        + 'The system covered all UK GOC registered opticians and helped the client determine who is inline with their legal obligations. '
-        + 'The project was written in YII, I added lots of extra functionality after it was launched in 2013. '
-        + 'I led the system through annual reporting years, ad hoc development and user support enquiries. '
-        + 'With documentation, design, reporting, database design and management included. '
-        + 'Included project to include a change in overnight synchronisation with a new Microsoft CRM system. '
-        + 'This was achieved with my PHP provided as custom classes and modules within the YII framework along with database deltas that managed changes. ',
+        'I was the lead developer on an e-learning management platform for the General Optical Council. ',
+        'This role included the design, development, testing and support of new features for around 20 thousand active users. '
+        + 'The project was written in YII (PHP) and originally launched in 2013. '
+        + 'I added lots of extra functionality and amended other areas as specified. '
+        + 'This platform served all UK GOC registered opticians and helps them meet annual targets required for active registration. ',
+        'I led the system through annual reporting years, ad hoc development and user support enquiries. '
+        + 'With documentation, design, reporting, database design and management included. ',
+        'I also assisted with a change in overnight synchronisation with Microsoft CRM system. '
+        + 'This was achieved with custom PHP classes and modules within the YII framework along with database deltas that managed changes. ',
       ],
       lists: [
         {
@@ -181,24 +187,24 @@ const appContent = {
     },
     {
       title: 'emotive (Global Healthcare Communications Agency)',
+      isVisible: true,
       slug: 'emotive',
       thumbnail: '/img/experience/emotive.png',
       paragraphs: [
-        'There\'s a number of really interesting projects that I took with emotive:'
-        + 'Augmentin, dosage browser app: Using BackboneJS and UnderscoreJS, I built a Javascript based iPhone app for a client that manufactured a drug called Augmentin. '
+        'There\'s a number of really interesting projects that I took with emotive:',
+        'Augmentin, dosage browser app: Using BackboneJS and UnderscoreJS, I built a Javascript based iPhone app for a client that manufactured a drug called Augmentin. '
         + 'It included user interaction feature in the style and design of a bathroom scale. '
         + 'A slider could be used to display dosage data in real time. '
         + 'The work was wrapped up in Cordova for over the air installations on iPhone and Android devices. '
-        + 'It was intended as promotional material for doctors in support of the brand. My skills with Backbone were instrumental in providing a manageable and flexible framework for all the JavaScript dependencies of this project.'
-        + 'CMS / Budget impact model API and Reporting: My skills and experience of SVG, Adobe and PHP allowed me to develop a mini infographic framework that could produce pixel perfect reports. '
+        + 'It was intended as promotional material for doctors in support of the brand. My skills with Backbone were instrumental in providing a manageable and flexible framework for all the JavaScript dependencies of this project.',
+        'CMS / Budget impact model API and Reporting: My skills and experience of SVG, Adobe and PHP allowed me to develop a mini infographic framework that could produce pixel perfect reports. '
         + 'I used PHP to populate SVG templates with data to manipulate the size and position of various chartable elements such as bar and pie charts. '
-        + 'I worked closely with designers who supplied me with SVG from Adobe Illustrator to the desired technical specification, I was able to use these as templates to stage dynamic data to generate PDF files that could then be shared via email service that I built.'
-        + 'Multistore: I was the lead developer, the project was forked from OpenCart and was for a pharmaceutical company. '
+        + 'I worked closely with designers who supplied me with SVG from Adobe Illustrator to the desired technical specification, I was able to use these as templates to stage dynamic data to generate PDF files that could then be shared via email service that I built.',
+        'Multistore: I was the lead developer, the project was forked from OpenCart and was for a pharmaceutical company. '
         + 'It was used to populate a custom built eDetailer app on iPads. '
         + 'It was the web service that synchronised the product catalogue and received packages of information from the user. '
         + 'The user would be able to browse, select and then progress with a request as a shopper would on a site under a checkout model - similar that of an Ecommerce website. '
-        + 'There was heavy customisation on this with lots of collaboration with content owners and the app developer. '
-        + 'It was a very cathartic and enjoyable experience.',
+        + 'There was heavy customisation on this with lots of collaboration with content owners and the app developer. ',
       ],
       lists: [
         {
@@ -238,14 +244,14 @@ const appContent = {
       'Used to working in a Agile Scrum or Kanban team',
       'Experienced in software development and release cycles',
       'A creative photoshop user with interests in art and design',
-      'A beer loving musician, father and family man',
+      'A beer loving, musician, father and family man',
     ],
     abilities: [
       'Write and maintain modern, robust and testable computer programming',
       'Write and maintain unit, integration and acceptance tests for quality assurance',
       'Deliver sprint goals, refine stories and provide estimates',
       'Provide Front and Back-end (API) design, development and maintenance',
-      'Integrate or build custom and product digital solutions and services',
+      'Integrate or build custom and product, digital solutions and services',
     ],
     knowledge: [
       'A range of open-source programming languages and frameworks',
@@ -260,7 +266,7 @@ const appContent = {
     + `I'd say, by ability, I'm between ${stackSplitStatement}. `
     + 'I\'m presently expanding my knowledge to serverless, terraform and CircleCI as means to provide another facet to my stack.',
     secondParagraph: 'I come from Yorkshire originally where I studied in graphic, media communications (BA Hons). '
-    + 'I\'m really interested in mind models and Physiology. Beyond coding, my passion is family, yoga and playing the guitar. '
+    + 'Beyond coding, I\'m really interested in mind models and Physiology. My other passions are family, yoga and playing the guitar. '
     + 'I built this site in Next.js (React JavaScript), any feedback is welcome. Thanks for reading.',
   },
   footer: {
