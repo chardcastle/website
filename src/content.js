@@ -39,10 +39,10 @@ const appContent = {
         + 'They were built to lint in ECMAScript 5 or 6 and deployed in an automated CI/CD environment. '
         + 'The users of these services belonged to the commercial and finance domain of the company. ',
         'I made further use of my experience with multilingual translations and locale handling.',
-        'I provided test coverage, instructions and data sources to technical and non-technical colleagues in the business. '
-        + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as jest.',
-        'Beyond the team, I helped establish a JavaScript community of practice, with other developers in the business.',
-        'I also held a voluntary role as a "security champion" in a team aiming to nurture the security culture of the business. '
+        'I provided test coverage, instructions and data sources to both technical and non-technical colleagues in the business. '
+        + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as Jest.',
+        'Beyond the team, with other developers in the business, I helped establish a JavaScript community of practice for the engineering department. ',
+        'I also held a voluntary role as a "security champion" in a team who\'d nurture the security culture of the business. '
         + 'This was a great exercise and exploration of the OWASP top 10 security threats.',
       ],
       lists: [
@@ -52,7 +52,7 @@ const appContent = {
         },
         {
           listTitle: 'Skills / software:',
-          listValues: 'Node.js, Serverless, AWS, Lambda, JavaScript, Jest, POEdit, Terraform, CircleCI, Jenkins',
+          listValues: 'Node.js, Serverless, AWS, Lambda, Docker, React, JavaScript, Jest, POEdit, Terraform, CircleCI, Jenkins',
         },
       ],
     },
@@ -138,7 +138,7 @@ const appContent = {
       slug: 'net-efficiency',
       thumbnail: '/img/experience/belron.png',
       paragraphs: [
-        'Responsible for the development towards the UK Autoglass website which delivered an optimised version for mobile devices and tablets. ',
+        'Responsible for the development towards the UK Autoglass website, this delivered an optimised version for mobile devices and tablets. ',
         'Autoglass is the number one site for vehicle glass repair and replacements. '
         + 'I styled the customer portal in which customers can manage their online appointments. '
         + 'I built the landing page in which customers specify the vehicle glass damage. '
