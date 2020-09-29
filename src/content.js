@@ -36,13 +36,12 @@ const appContent = {
         'I supported the team in the design and construction of serverless services in Amazon Web Services. '
         + 'These services replaced internal manual workflows and improved communications for one half of their business users. '
         + 'The technical solutions included event driven features which published and consumed event messages (AWS SNS/SQS). '
-        + 'They were built to lint in ECMAScript 5 or 6 and deployed in an automated CI/CD environment. '
+        + 'They were built to lint in ECMAScript 5 or 6 and deployed via CI/CD pipelines. '
         + 'The users of these services belonged to the commercial and finance domain of the company. ',
-        'I made further use of my experience with multilingual translations and locale handling.',
         'I provided test coverage, instructions and data sources to both technical and non-technical colleagues in the business. '
         + 'Including documentation as standard with swagger OpenAPI, complete with unit testing in frameworks such as Jest.',
-        'Beyond the team, with other developers in the business, I helped establish a JavaScript community of practice for the engineering department. ',
-        'I also held a voluntary role as a "security champion" in a team who\'d nurture the security culture of the business. '
+        'Beyond the team, with other developers in the business, I helped establish a JavaScript community of practice for the engineering department. '
+        + 'I also held a voluntary role as a "security champion" in a team focused on nurturing a security culture within the business. '
         + 'This was a great exercise and exploration of the OWASP top 10 security threats.',
       ],
       lists: [
