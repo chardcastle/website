@@ -12,7 +12,7 @@ import Footer from '../components/footer';
 
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
-  const toggleNavOpen = () => { setNavOpen(!navOpen); }
+  const toggleNavOpen = () => { setNavOpen(!navOpen); };
   return (
     <>
       <Navigation content={content} onOpen={toggleNavOpen} />
