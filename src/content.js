@@ -62,13 +62,15 @@ const appContent = {
       thumbnail: '/img/experience/eagleeye.png',
       paragraphs: [
         'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. ',
-        'I worked on features which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK.',
+        'I worked on PHP API\'s which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK. '
+        + 'During this time I became interested in event based technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.',
         'I led the design, build and delivery of an legacy XML based EPoS API within their AIR platform, assisting '
         + 'and supporting the migration of new and existing well known high street retailers to this service. '
-        + 'I then expanded the solution to include EES digital wallet products and consumer search for JDSports.',
-        'Writing console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. '
-        + 'Other scripts I wrote searched for and reported on financial transactions, campaign activity and consumer data.',
-        'I was exploring event based technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.',
+        + 'I extended the solution to include EES digital wallet products and consumer search for JDSports.',
+        'I wrote a number of console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. '
+        + 'I was responsible for the migration of extremely valuable PII and stored value (financial) data. '
+        + 'I was obliged to adopt rigorous habits towards maintaining ISO/IEC 27001 (information security) compliance.',
+        'Remaining duties included the creation of features to report on financial transactions, campaign activity and consumer data.'
       ],
       lists: [
         {
