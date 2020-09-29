@@ -1,13 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About 
 
-## Getting Started
+Source code for my website. Built using  [Next.js](https://nextjs.org/) project bootstrapped with [`react-bootstrap`](https://react-bootstrap.github.io/).
 
-First, run the development server:
+## Usage
+
+For local development, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
+make dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser and get cracking.
+
+See Makefile for other functions and or run `make help` for more info.
+
+## Deploy
+
+Export the site to the local `/out` folder and upload static files to S3 bucket.

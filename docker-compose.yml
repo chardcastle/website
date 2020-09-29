@@ -1,0 +1,5 @@
+version: "2.2"
+
+services:
+  site_node:
+    image: node:12-alpine
