@@ -34,7 +34,7 @@ const appContent = {
         'As a software development engineer, this role was a transition to a more Node.js orientated role. '
         + 'I used Amazon\'s well architected framework pillars as a guide to creating micro-systems, as a means to defuse a legacy monolith. ',
         'I supported the team in the design and construction of serverless services in Amazon Web Services. '
-        + 'These services replaced internal manual workflows and improved communications for one half of their business users. '
+        + 'These services replaced internal manual workflows and improved communications for one half of their global business users. '
         + 'The technical solutions included event driven features which published and consumed event messages (AWS SNS/SQS). '
         + 'They were built to lint in ECMAScript 5 or 6 and deployed via CI/CD pipelines. '
         + 'The users of these services belonged to the commercial and finance domain of the company. ',
@@ -61,16 +61,16 @@ const appContent = {
       slug: 'eagle-eye-solutions',
       thumbnail: '/img/experience/eagleeye.png',
       paragraphs: [
-        'As a Senior Developer designing, building and delivering API endpoints and scripts on public API’s within Eagle Eye’s AIR platform. ',
-        'I worked on PHP API\'s which handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK. '
-        + 'During this time I became interested in event based technologies such as Rabbit MQ was required to handle the extremely high volumes of data and API traffic.',
-        'I led the design, build and delivery of an legacy XML based EPoS API within their AIR platform, assisting '
-        + 'and supporting the migration of new and existing well known high street retailers to this service. '
+        'As a Senior Developer designing, building and delivering API endpoints and scripts within Eagle Eye’s AIR platform. ',
+        'I worked on a number of PHP APIs. These handled requests from mobile apps, retail point of sale equipment (EPoS), CRM and retail systems all over the UK. '
+        + 'Due to the high volume of data and traffic within the platform, it was necessary to innovate with micro-optimisations and event based technology.',
+        'I led the design, build and delivery of support for a legacy XML based EPoS API within their AIR platform. '
+        + 'Assisting and supporting the migration of well known high street retailers to this service. '
         + 'I extended the solution to include EES digital wallet products and consumer search for JDSports.',
         'I wrote a number of console based scripts to import coupon and consumer data for clients such as Thomas Pink and Clarks. '
         + 'I was responsible for the migration of extremely valuable PII and stored value (financial) data. '
         + 'I was obliged to adopt rigorous habits towards maintaining ISO/IEC 27001 (information security) compliance.',
-        'Remaining duties included the creation of features to report on financial transactions, campaign activity and consumer data.'
+        'Remaining duties included the creation of features to report on financial transactions, campaign activity and consumer data.',
       ],
       lists: [
         {

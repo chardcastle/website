@@ -16,4 +16,4 @@ See Makefile for other functions and or run `make help` for more info.
 
 ## Deploy
 
-Export the site to the local `/out` folder and upload static files to S3 bucket.
+Run `make export` to export the site to the local `/out` folder, then upload static files to S3 bucket in AWS.

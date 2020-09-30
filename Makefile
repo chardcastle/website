@@ -1,8 +1,9 @@
 help:        ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
-dev:         ## Start a development session
-	yarn dev
+dev:         ## Start a local development session
+	docker-compose -f docker-compose.build.yml run site_node
+	docker-compose -f docker-compose.build.yml run -p 14100:3000 site_node yarn dev
 
 lint:        ## Check code
 	docker-compose -f docker-compose.build.yml run --rm site_node yarn lint
@@ -16,3 +17,9 @@ export-site: ## Exports the site to the /out folder
 
 connect:     ## Connect to the docker container
 	docker-compose run --rm site_node sh
+
+stop:        ## Stop container
+	docker-compose stop
+
+down:        ## Take container down
+	docker-compose down
