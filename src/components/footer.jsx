@@ -48,7 +48,7 @@ function Footer(props) {
           </Col>
         </Row>
       </Container>
-      <Container className={styles.footerBelow}>
+      <Container className={styles.footerBelow} fluid>
         <Row>
           <Col>
             {content.copyright}
