@@ -73,6 +73,7 @@ function ExperienceItem(props) {
 ExperienceItem.propTypes = {
   experience: PropTypes.exact({
     title: PropTypes.string,
+    isVisible: PropTypes.bool,
     slug: PropTypes.string,
     thumbnail: PropTypes.string,
     lists: PropTypes.arrayOf(PropTypes.shape({

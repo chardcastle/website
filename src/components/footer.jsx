@@ -13,13 +13,13 @@ function Footer(props) {
 
   return (
     <footer className={`text-center ${styles.appFooter}`}>
-      <Container className={styles.footerAbove} fluid>
+      <Container>
         <Row>
-          <Col>
+          <Col sm={12} md={6} className={styles.inner}>
             <h3 className={`${globalStyles.footerTitle} ${globalStyles.styledFont}`}>Location</h3>
             <p>{content.location}</p>
           </Col>
-          <Col className={globalStyles.noStyle}>
+          <Col sm={12} md={6} className={`${globalStyles.noStyle}, ${styles.inner}`}>
             <h3 className={`${globalStyles.footerTitle} ${globalStyles.styledFont}`}>Around the Web</h3>
             <Row>
               <ListGroup horizontal className={styles.listGroup}>
@@ -48,7 +48,7 @@ function Footer(props) {
           </Col>
         </Row>
       </Container>
-      <Container className={styles.footerBelow} fluid>
+      <Container className={styles.footerBelow}>
         <Row>
           <Col>
             {content.copyright}

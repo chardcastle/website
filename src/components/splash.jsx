@@ -16,7 +16,7 @@ function Splash(props) {
       <Container>
         <Row>
           <Col className={columnClassName}>
-            <img className={styles.imgCentered} src="/img/profile.png?cache=2" alt="" />
+            <img className={styles.imgCentered} src="/img/profile.png?cache=3" alt="" />
             <h1 className={`${styles.title} ${globalStyles.styledFont}`}>{content.splashTitle}</h1>
             <Divider type="line-primary" />
             <span className={styles.summary}>
