@@ -4,16 +4,10 @@ Source code for my website. Built using  [Next.js](https://nextjs.org/) project 
 
 ## Usage
 
-For local development, run the development server:
+Run `yarn dev` and open [http://localhost:3000](http://localhost:3000) with your browser to get cracking.
 
-```bash
-make dev
-```
+See Makefile or run `make help` for remaining usage options.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser and get cracking.
-
-See Makefile for other functions and or run `make help` for more info.
-
-## Deploy
-
-Run `make export` to export the site to the local `/out` folder, then upload static files to S3 bucket in AWS.
+In summary, for demo or quick inspection, run `make dev`. Because this boots in the container, you don't need to care about your host environment. 
+Once your done making changes, export the site using `make export-site`.
+A copy of the website source files will be in the `./out` folder. Upload the static files to the S3 bucket in AWS which hosts the website.

@@ -15,6 +15,9 @@ export-site: ## Exports the site to the /out folder
 	docker-compose -f docker-compose.build.yml run --rm site_node
 	docker-compose -f docker-compose.build.yml run --rm site_node yarn export
 
+deploy-site: ## Deploys the site to public S3 bucket in AWS
+	aws s3 cp ./out s3://chrishardcastle.co.uk/ --recursive
+
 connect:     ## Connect to the docker container
 	docker-compose run --rm site_node sh
 

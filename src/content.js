@@ -14,7 +14,7 @@ const appContent = {
   ogType: 'website',
   ogUrl: publicRuntimeConfig.siteUrl,
   ogImage: `${publicRuntimeConfig.siteUrl}/img/profile.png`,
-  ogDescription: `${myTitle} is a senior software developer from the UK`,
+  ogDescription: `${myTitle} is a software engineer from the UK`,
   titleAbout: 'About',
   titleCvPDF: 'CV (PDF)',
   titleExperience: 'Experience',
